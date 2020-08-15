@@ -1,0 +1,675 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Entity
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Entity
+   ">
+    <meta name="generator" content="docfx 1.0.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="@altmp/altv-types.alt-server.Entity">
+  
+  
+  <h1 id="_altmp_altv_types_alt_server_Entity" data-uid="@altmp/altv-types.alt-server.Entity">Class Entity
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+          <div class="level0"><a class="xref" href="alt-server.BaseObject.html#_altmp_altv_types_alt_server_BaseObject">BaseObject</a></div>
+      <div class="level1"><a class="xref" href="alt-server.WorldObject.html#_altmp_altv_types_alt_server_WorldObject">WorldObject</a></div>
+      <div class="level2"><span class="xref">Entity</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="alt-server.WorldObject.html#_altmp_altv_types_alt_server_WorldObject_dimension">dimension</a>
+    </div>
+    <div>
+      <a class="xref" href="alt-server.WorldObject.html#_altmp_altv_types_alt_server_WorldObject_pos">pos</a>
+    </div>
+    <div>
+      <a class="xref" href="alt-server.BaseObject.html#_altmp_altv_types_alt_server_BaseObject_type">type</a>
+    </div>
+    <div>
+      <a class="xref" href="alt-server.BaseObject.html#_altmp_altv_types_alt_server_BaseObject_valid">valid</a>
+    </div>
+    <div>
+      <a class="xref" href="alt-server.BaseObject.html#_altmp_altv_types_alt_server_BaseObject_deleteMeta">deleteMeta(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="alt-server.BaseObject.html#_altmp_altv_types_alt_server_BaseObject_destroy">destroy()</a>
+    </div>
+    <div>
+      <a class="xref" href="alt-server.BaseObject.html#_altmp_altv_types_alt_server_BaseObject_getMeta">getMeta(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="alt-server.BaseObject.html#_altmp_altv_types_alt_server_BaseObject_hasMeta">hasMeta(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="alt-server.BaseObject.html#_altmp_altv_types_alt_server_BaseObject_setMeta">setMeta(string, any)</a>
+    </div>
+  </div>
+  <h6><strong>Module</strong>: <a class="xref" href="alt-server.html">alt-server</a></h6>
+  <h6><strong>Package</strong>: <span class="xref">@altmp/altv-types</span></h6>
+  <h5 id="_altmp_altv_types_alt_server_Entity_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">class Entity extends WorldObject</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/altmp/altv-types/blob/master/.\server/index.d.ts/#L109">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_server_Entity_id" data-uid="@altmp/altv-types.alt-server.Entity.id">id</h4>
+  <div class="markdown level1 summary"><p>Internal identificator of the entity which is identical on both sides.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public readonly id: number</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/altmp/altv-types/blob/master/.\server/index.d.ts/#L121">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_server_Entity_model" data-uid="@altmp/altv-types.alt-server.Entity.model">model</h4>
+  <div class="markdown level1 summary"><p>Entity model hash.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public model: number | string</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">number | string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="_altmp_altv_types_alt_server_Entity_model_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Only setter accepts string or number as input, getter returns value as number.</p>
+</div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/altmp/altv-types/blob/master/.\server/index.d.ts/#L114">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_server_Entity_netOwner" data-uid="@altmp/altv-types.alt-server.Entity.netOwner">netOwner</h4>
+  <div class="markdown level1 summary"><p>Network owner of the entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public readonly netOwner: Player | null</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="alt-server.Player.html#_altmp_altv_types_alt_server_Player">Player</a> | null</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/altmp/altv-types/blob/master/.\server/index.d.ts/#L128">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_server_Entity_rot" data-uid="@altmp/altv-types.alt-server.Entity.rot">rot</h4>
+  <div class="markdown level1 summary"><p>Entity rotation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public rot: Vector3</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="alt-server.Vector3.html#_altmp_altv_types_alt_server_Vector3">Vector3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="_altmp_altv_types_alt_server_Entity_rot_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Values are provided in radians .</p>
+</div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/altmp/altv-types/blob/master/.\server/index.d.ts/#L174">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_server_Entity_deleteStreamSyncedMeta" data-uid="@altmp/altv-types.alt-server.Entity.deleteStreamSyncedMeta">deleteStreamSyncedMeta(string)</h4>
+  <div class="markdown level1 summary"><p>Removes the specified key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">deleteStreamSyncedMeta(key: string): void</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><em>key</em></td>
+        <td>
+          <p>The key of the value to remove.</p>
+
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/altmp/altv-types/blob/master/.\server/index.d.ts/#L143">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_server_Entity_deleteSyncedMeta" data-uid="@altmp/altv-types.alt-server.Entity.deleteSyncedMeta">deleteSyncedMeta(string)</h4>
+  <div class="markdown level1 summary"><p>Removes the specified key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">deleteSyncedMeta(key: string): void</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><em>key</em></td>
+        <td>
+          <p>The key of the value to remove.</p>
+
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/altmp/altv-types/blob/master/.\server/index.d.ts/#L182">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_server_Entity_getStreamSyncedMeta" data-uid="@altmp/altv-types.alt-server.Entity.getStreamSyncedMeta">getStreamSyncedMeta(string)</h4>
+  <div class="markdown level1 summary"><p>Gets a value using the specified key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">getStreamSyncedMeta(key: string): any</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><em>key</em></td>
+        <td>
+          <p>The key of the value to get.</p>
+
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">any</span></td>
+        <td><p>Dynamic value associated with the specified key.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/altmp/altv-types/blob/master/.\server/index.d.ts/#L151">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_server_Entity_getSyncedMeta" data-uid="@altmp/altv-types.alt-server.Entity.getSyncedMeta">getSyncedMeta(string)</h4>
+  <div class="markdown level1 summary"><p>Gets a value using the specified key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">getSyncedMeta(key: string): any</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><em>key</em></td>
+        <td>
+          <p>The key of the value to get.</p>
+
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">any</span></td>
+        <td><p>Dynamic value associated with the specified key.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/altmp/altv-types/blob/master/.\server/index.d.ts/#L190">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_server_Entity_hasStreamSyncedMeta" data-uid="@altmp/altv-types.alt-server.Entity.hasStreamSyncedMeta">hasStreamSyncedMeta(string)</h4>
+  <div class="markdown level1 summary"><p>Determines whether contains the specified key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">hasStreamSyncedMeta(key: string): boolean</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><em>key</em></td>
+        <td>
+          <p>The key of the value to locate.</p>
+
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td><p>Return is dependent on whether element associated with the specified key is stored.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/altmp/altv-types/blob/master/.\server/index.d.ts/#L159">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_server_Entity_hasSyncedMeta" data-uid="@altmp/altv-types.alt-server.Entity.hasSyncedMeta">hasSyncedMeta(string)</h4>
+  <div class="markdown level1 summary"><p>Determines whether contains the specified key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">hasSyncedMeta(key: string): boolean</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><em>key</em></td>
+        <td>
+          <p>The key of the value to locate.</p>
+
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td><p>Return is dependent on whether element associated with the specified key is stored.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/altmp/altv-types/blob/master/.\server/index.d.ts/#L198">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_server_Entity_setStreamSyncedMeta" data-uid="@altmp/altv-types.alt-server.Entity.setStreamSyncedMeta">setStreamSyncedMeta(string, any)</h4>
+  <div class="markdown level1 summary"><p>Stores the given value with the specified key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">setStreamSyncedMeta(key: string, value: any): void</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><em>key</em></td>
+        <td>
+          <p>The key of the value to store.</p>
+
+          
+        </td>
+      </tr>
+      <tr>
+        <td><span class="xref">any</span></td>
+        <td><em>value</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="_altmp_altv_types_alt_server_Entity_setStreamSyncedMeta_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The given value will be shared with all clients in streaming range.</p>
+</div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/altmp/altv-types/blob/master/.\server/index.d.ts/#L167">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_server_Entity_setSyncedMeta" data-uid="@altmp/altv-types.alt-server.Entity.setSyncedMeta">setSyncedMeta(string, any)</h4>
+  <div class="markdown level1 summary"><p>Stores the given value with the specified key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">setSyncedMeta(key: string, value: any): void</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><em>key</em></td>
+        <td>
+          <p>The key of the value to store.</p>
+
+          
+        </td>
+      </tr>
+      <tr>
+        <td><span class="xref">any</span></td>
+        <td><em>value</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="_altmp_altv_types_alt_server_Entity_setSyncedMeta_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The given value will be shared with all clients.</p>
+</div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/altmp/altv-types/blob/master/.\server/index.d.ts/#L136">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_server_Entity_getByID" data-uid="@altmp/altv-types.alt-server.Entity.getByID">getByID(number)</h4>
+  <div class="markdown level1 summary"><p>Retrieves the entity from the pool.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">static getByID(id: number): Entity | null</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td><em>id</em></td>
+        <td>
+          <p>The id of the entity.</p>
+
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="alt-server.Entity.html#_altmp_altv_types_alt_server_Entity">Entity</a> | null</td>
+        <td><p>Entity if it was found, otherwise null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/altmp/altv-types/blob/master/.\server/index.d.ts/#L105" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
