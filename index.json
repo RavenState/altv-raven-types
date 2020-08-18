@@ -214,10 +214,10 @@
     "title": "Alt:V JS module documentation",
     "keywords": "Alt:V JS module documentation"
   },
-  "articles/intro.html": {
-    "href": "articles/intro.html",
+  "articles/index.html": {
+    "href": "articles/index.html",
     "title": "Getting Started",
-    "keywords": "Getting Started This is the documentation for getting started developing JS resources."
+    "keywords": "Getting Started This is the documentation for getting started with developing JS resources."
   },
   "index.html": {
     "href": "index.html",
