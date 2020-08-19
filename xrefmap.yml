@@ -1204,10 +1204,16 @@ references:
   name: netOwner
   href: api/alt-server.Entity.html#_altmp_altv_types_alt_server_Entity_netOwner
   fullName: netOwner
+- uid: '@altmp/altv-types.alt-server.Entity.resetNetOwner'
+  name: resetNetOwner(boolean)
+  href: api/alt-server.Entity.html#_altmp_altv_types_alt_server_Entity_resetNetOwner
 - uid: '@altmp/altv-types.alt-server.Entity.rot'
   name: rot
   href: api/alt-server.Entity.html#_altmp_altv_types_alt_server_Entity_rot
   fullName: rot
+- uid: '@altmp/altv-types.alt-server.Entity.setNetOwner'
+  name: setNetOwner(Player, boolean)
+  href: api/alt-server.Entity.html#_altmp_altv_types_alt_server_Entity_setNetOwner
 - uid: '@altmp/altv-types.alt-server.Entity.setStreamSyncedMeta'
   name: setStreamSyncedMeta(string, any)
   href: api/alt-server.Entity.html#_altmp_altv_types_alt_server_Entity_setStreamSyncedMeta
@@ -1423,7 +1429,7 @@ references:
   href: api/alt-server.Player.html#_altmp_altv_types_alt_server_Player_ip
   fullName: ip
 - uid: '@altmp/altv-types.alt-server.Player.kick'
-  name: kick()
+  name: kick(string)
   href: api/alt-server.Player.html#_altmp_altv_types_alt_server_Player_kick
 - uid: '@altmp/altv-types.alt-server.Player.maxArmour'
   name: maxArmour

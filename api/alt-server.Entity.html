@@ -159,7 +159,7 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/.\server/index.d.ts/#L121">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/.\server/index.d.ts/#L126">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Entity_model" data-uid="@altmp/altv-types.alt-server.Entity.model">model</h4>
   <div class="markdown level1 summary"><p>Entity model hash.</p>
@@ -184,12 +184,12 @@
       </tr>
     </tbody>
   </table>
-  <h5 id="_altmp_altv_types_alt_server_Entity_model_remarks">Remarks</h5>
+  <h5 id="_altmp_altv_types_alt_server_Entity_model_remarks" class="decalaration">Remarks</h5>
   <div class="markdown level1 remarks"><p>Only setter accepts string or number as input, getter returns value as number.</p>
 </div>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/.\server/index.d.ts/#L114">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/.\server/index.d.ts/#L119">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Entity_netOwner" data-uid="@altmp/altv-types.alt-server.Entity.netOwner">netOwner</h4>
   <div class="markdown level1 summary"><p>Network owner of the entity.</p>
@@ -214,9 +214,16 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="_altmp_altv_types_alt_server_Entity_netOwner_remarks" class="decalaration">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Network owner is responsible for syncing entity with the server.
+It changes when actual network owner passes the migration range,
+then the new one is determined based on distance from the entity
+(if entity is a vehicle, then the driver will take priority for becoming network owner).
+Disabling migration range will stop this process from happening until turned on again.</p>
+</div>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/.\server/index.d.ts/#L128">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/.\server/index.d.ts/#L133">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Entity_rot" data-uid="@altmp/altv-types.alt-server.Entity.rot">rot</h4>
   <div class="markdown level1 summary"><p>Entity rotation.</p>
@@ -241,14 +248,14 @@
       </tr>
     </tbody>
   </table>
-  <h5 id="_altmp_altv_types_alt_server_Entity_rot_remarks">Remarks</h5>
+  <h5 id="_altmp_altv_types_alt_server_Entity_rot_remarks" class="decalaration">Remarks</h5>
   <div class="markdown level1 remarks"><p>Values are provided in radians .</p>
 </div>
   <h3 id="methods">Methods
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/.\server/index.d.ts/#L174">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/.\server/index.d.ts/#L179">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Entity_deleteStreamSyncedMeta" data-uid="@altmp/altv-types.alt-server.Entity.deleteStreamSyncedMeta">deleteStreamSyncedMeta(string)</h4>
   <div class="markdown level1 summary"><p>Removes the specified key.</p>
@@ -281,7 +288,7 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/.\server/index.d.ts/#L143">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/.\server/index.d.ts/#L148">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Entity_deleteSyncedMeta" data-uid="@altmp/altv-types.alt-server.Entity.deleteSyncedMeta">deleteSyncedMeta(string)</h4>
   <div class="markdown level1 summary"><p>Removes the specified key.</p>
@@ -314,7 +321,7 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/.\server/index.d.ts/#L182">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/.\server/index.d.ts/#L187">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Entity_getStreamSyncedMeta" data-uid="@altmp/altv-types.alt-server.Entity.getStreamSyncedMeta">getStreamSyncedMeta(string)</h4>
   <div class="markdown level1 summary"><p>Gets a value using the specified key.</p>
@@ -363,7 +370,7 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/.\server/index.d.ts/#L151">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/.\server/index.d.ts/#L156">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Entity_getSyncedMeta" data-uid="@altmp/altv-types.alt-server.Entity.getSyncedMeta">getSyncedMeta(string)</h4>
   <div class="markdown level1 summary"><p>Gets a value using the specified key.</p>
@@ -412,7 +419,7 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/.\server/index.d.ts/#L190">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/.\server/index.d.ts/#L195">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Entity_hasStreamSyncedMeta" data-uid="@altmp/altv-types.alt-server.Entity.hasStreamSyncedMeta">hasStreamSyncedMeta(string)</h4>
   <div class="markdown level1 summary"><p>Determines whether contains the specified key.</p>
@@ -461,7 +468,7 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/.\server/index.d.ts/#L159">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/.\server/index.d.ts/#L164">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Entity_hasSyncedMeta" data-uid="@altmp/altv-types.alt-server.Entity.hasSyncedMeta">hasSyncedMeta(string)</h4>
   <div class="markdown level1 summary"><p>Determines whether contains the specified key.</p>
@@ -510,7 +517,98 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/.\server/index.d.ts/#L198">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/.\server/index.d.ts/#L232">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_server_Entity_resetNetOwner" data-uid="@altmp/altv-types.alt-server.Entity.resetNetOwner">resetNetOwner(boolean)</h4>
+  <div class="markdown level1 summary"><p>Resets overwritten network owner.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">resetNetOwner(disableMigration?: boolean): void</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td><em>disableMigration</em></td>
+        <td>
+          <p>Pass true to disable migration, false to keep it enabled.
+If not specified, it defaults to &quot;false&quot;.</p>
+
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="_altmp_altv_types_alt_server_Entity_resetNetOwner_remarks" class="decalaration">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See <a class="xref" href="alt-server.Entity.html#_altmp_altv_types_alt_server_Entity_netOwner">netOwner</a> to understand how network owner works.</p>
+<p><b>
+Keep in mind that disabling migration can lead to unexpected behaviour when
+the network owner gets out of the streaming range.
+</b></p>
+</div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/altmp/altv-types/blob/master/.\server/index.d.ts/#L218">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_server_Entity_setNetOwner" data-uid="@altmp/altv-types.alt-server.Entity.setNetOwner">setNetOwner(Player, boolean)</h4>
+  <div class="markdown level1 summary"><p>Changes network owner to the specified player.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">setNetOwner(player: Player, disableMigration?: boolean): void</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="alt-server.Player.html#_altmp_altv_types_alt_server_Player">Player</a></td>
+        <td><em>player</em></td>
+        <td>
+          <p>The given player that will be set as new network owner.</p>
+
+          
+        </td>
+      </tr>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td><em>disableMigration</em></td>
+        <td>
+          <p>Pass true to disable migration, false to keep it enabled.
+If not specified, it defaults to &quot;false&quot;.</p>
+
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="_altmp_altv_types_alt_server_Entity_setNetOwner_remarks" class="decalaration">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See <a class="xref" href="alt-server.Entity.html#_altmp_altv_types_alt_server_Entity_netOwner">netOwner</a> to understand how network owner works.</p>
+<p><b>
+Keep in mind that disabling migration can lead to unexpected behaviour when
+the network owner gets out of the streaming range.
+</b></p>
+</div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/altmp/altv-types/blob/master/.\server/index.d.ts/#L203">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Entity_setStreamSyncedMeta" data-uid="@altmp/altv-types.alt-server.Entity.setStreamSyncedMeta">setStreamSyncedMeta(string, any)</h4>
   <div class="markdown level1 summary"><p>Stores the given value with the specified key.</p>
@@ -549,12 +647,12 @@
       </tr>
     </tbody>
   </table>
-  <h5 id="_altmp_altv_types_alt_server_Entity_setStreamSyncedMeta_remarks">Remarks</h5>
+  <h5 id="_altmp_altv_types_alt_server_Entity_setStreamSyncedMeta_remarks" class="decalaration">Remarks</h5>
   <div class="markdown level1 remarks"><p>The given value will be shared with all clients in streaming range.</p>
 </div>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/.\server/index.d.ts/#L167">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/.\server/index.d.ts/#L172">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Entity_setSyncedMeta" data-uid="@altmp/altv-types.alt-server.Entity.setSyncedMeta">setSyncedMeta(string, any)</h4>
   <div class="markdown level1 summary"><p>Stores the given value with the specified key.</p>
@@ -593,12 +691,12 @@
       </tr>
     </tbody>
   </table>
-  <h5 id="_altmp_altv_types_alt_server_Entity_setSyncedMeta_remarks">Remarks</h5>
+  <h5 id="_altmp_altv_types_alt_server_Entity_setSyncedMeta_remarks" class="decalaration">Remarks</h5>
   <div class="markdown level1 remarks"><p>The given value will be shared with all clients.</p>
 </div>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/.\server/index.d.ts/#L136">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/.\server/index.d.ts/#L141">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Entity_getByID" data-uid="@altmp/altv-types.alt-server.Entity.getByID">getByID(number)</h4>
   <div class="markdown level1 summary"><p>Retrieves the entity from the pool.</p>
