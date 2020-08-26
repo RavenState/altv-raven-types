@@ -1093,6 +1093,10 @@ references:
 - uid: '@altmp/altv-types.alt-server.Colshape.isPointIn'
   name: isPointIn(Vector3)
   href: api/alt-server.Colshape.html#_altmp_altv_types_alt_server_Colshape_isPointIn
+- uid: '@altmp/altv-types.alt-server.Colshape.playersOnly'
+  name: playersOnly
+  href: api/alt-server.Colshape.html#_altmp_altv_types_alt_server_Colshape_playersOnly
+  fullName: playersOnly
 - uid: '@altmp/altv-types.alt-server.ColshapeCircle'
   name: ColshapeCircle
   href: api/alt-server.ColshapeCircle.html#_altmp_altv_types_alt_server_ColshapeCircle
@@ -1270,6 +1274,18 @@ references:
 - uid: '@altmp/altv-types.alt-server.hasSyncedMeta'
   name: hasSyncedMeta(string)
   href: api/alt-server.html#_altmp_altv_types_alt_server_hasSyncedMeta
+- uid: '@altmp/altv-types.alt-server.IFireInfo'
+  name: IFireInfo
+  href: api/alt-server.IFireInfo.html#_altmp_altv_types_alt_server_IFireInfo
+  fullName: IFireInfo
+- uid: '@altmp/altv-types.alt-server.IFireInfo.pos'
+  name: pos
+  href: api/alt-server.IFireInfo.html#_altmp_altv_types_alt_server_IFireInfo_pos
+  fullName: pos
+- uid: '@altmp/altv-types.alt-server.IFireInfo.weapon'
+  name: weapon
+  href: api/alt-server.IFireInfo.html#_altmp_altv_types_alt_server_IFireInfo_weapon
+  fullName: weapon
 - uid: '@altmp/altv-types.alt-server.log'
   name: log(any[])
   href: api/alt-server.html#_altmp_altv_types_alt_server_log
@@ -1295,50 +1311,62 @@ references:
   name: 'on("anyResourceError", (resourceName: string) => void)'
   href: api/alt-server.html#_altmp_altv_types_alt_server_on_1
 - uid: '@altmp/altv-types.alt-server.on_10'
-  name: 'on("playerDamage", (victim: Player, attacker: Entity, weaponHash: number, damage: number) => void)'
+  name: 'on("playerConnect", (player: Player) => void)'
   href: api/alt-server.html#_altmp_altv_types_alt_server_on_10
 - uid: '@altmp/altv-types.alt-server.on_11'
-  name: 'on("playerDeath", (victim: Player, killer: Entity, weaponHash: number) => void)'
+  name: 'on("playerDamage", (victim: Player, attacker: Entity, weaponHash: number, damage: number) => void)'
   href: api/alt-server.html#_altmp_altv_types_alt_server_on_11
 - uid: '@altmp/altv-types.alt-server.on_12'
-  name: 'on("playerDisconnect", (player: Player, reason: string) => void)'
+  name: 'on("playerDeath", (victim: Player, killer: Entity, weaponHash: number) => void)'
   href: api/alt-server.html#_altmp_altv_types_alt_server_on_12
 - uid: '@altmp/altv-types.alt-server.on_13'
-  name: 'on("playerEnteredVehicle", (player: Player, vehicle: Vehicle, seat: number) => void)'
+  name: 'on("playerDisconnect", (player: Player, reason: string) => void)'
   href: api/alt-server.html#_altmp_altv_types_alt_server_on_13
 - uid: '@altmp/altv-types.alt-server.on_14'
-  name: 'on("playerLeftVehicle", (player: Player, vehicle: Vehicle, seat: number) => void)'
+  name: 'on("playerEnteredVehicle", (player: Player, vehicle: Vehicle, seat: number) => void)'
   href: api/alt-server.html#_altmp_altv_types_alt_server_on_14
 - uid: '@altmp/altv-types.alt-server.on_15'
-  name: 'on("removeEntity", (object: BaseObject) => void)'
+  name: 'on("playerLeftVehicle", (player: Player, vehicle: Vehicle, seat: number) => void)'
   href: api/alt-server.html#_altmp_altv_types_alt_server_on_15
 - uid: '@altmp/altv-types.alt-server.on_16'
-  name: 'on("resourceStart", (errored: boolean) => void)'
+  name: 'on("removeEntity", (object: BaseObject) => void)'
   href: api/alt-server.html#_altmp_altv_types_alt_server_on_16
 - uid: '@altmp/altv-types.alt-server.on_17'
-  name: on("resourceStop", () => void)
+  name: 'on("resourceStart", (errored: boolean) => void)'
   href: api/alt-server.html#_altmp_altv_types_alt_server_on_17
 - uid: '@altmp/altv-types.alt-server.on_18'
-  name: 'on("syncedMetaChange", (entity: Entity, key: string, value: any, oldValue: any) => void)'
+  name: on("resourceStop", () => void)
   href: api/alt-server.html#_altmp_altv_types_alt_server_on_18
 - uid: '@altmp/altv-types.alt-server.on_19'
-  name: 'on("streamSyncedMetaChange", (entity: Entity, key: string, value: any, oldValue: any) => void)'
+  name: 'on("syncedMetaChange", (entity: Entity, key: string, value: any, oldValue: any) => void)'
   href: api/alt-server.html#_altmp_altv_types_alt_server_on_19
 - uid: '@altmp/altv-types.alt-server.on_2'
   name: 'on("anyResourceStart", (resourceName: string) => void)'
   href: api/alt-server.html#_altmp_altv_types_alt_server_on_2
 - uid: '@altmp/altv-types.alt-server.on_20'
-  name: 'on("globalMetaChange", (key: string, value: any, oldValue: any) => void)'
+  name: 'on("streamSyncedMetaChange", (entity: Entity, key: string, value: any, oldValue: any) => void)'
   href: api/alt-server.html#_altmp_altv_types_alt_server_on_20
 - uid: '@altmp/altv-types.alt-server.on_21'
-  name: 'on("globalSyncedMetaChange", (key: string, value: any, oldValue: any) => void)'
+  name: 'on("globalMetaChange", (key: string, value: any, oldValue: any) => void)'
   href: api/alt-server.html#_altmp_altv_types_alt_server_on_21
 - uid: '@altmp/altv-types.alt-server.on_22'
-  name: 'on("vehicleDestroy", (vehicle: Vehicle) => void)'
+  name: 'on("globalSyncedMetaChange", (key: string, value: any, oldValue: any) => void)'
   href: api/alt-server.html#_altmp_altv_types_alt_server_on_22
 - uid: '@altmp/altv-types.alt-server.on_23'
-  name: 'on("weaponDamage", (source: Entity, target: Entity, weaponHash: number, damage: number, offset: Vector3, bodyPart: number) => boolean | void)'
+  name: 'on("vehicleDestroy", (vehicle: Vehicle) => void)'
   href: api/alt-server.html#_altmp_altv_types_alt_server_on_23
+- uid: '@altmp/altv-types.alt-server.on_24'
+  name: 'on("weaponDamage", (source: Entity, target: Entity, weaponHash: number, damage: number, offset: Vector3, bodyPart: number) => boolean | void)'
+  href: api/alt-server.html#_altmp_altv_types_alt_server_on_24
+- uid: '@altmp/altv-types.alt-server.on_25'
+  name: 'on("startFire", (player: Player, fires: Array<IFireInfo>) => boolean | void)'
+  href: api/alt-server.html#_altmp_altv_types_alt_server_on_25
+- uid: '@altmp/altv-types.alt-server.on_26'
+  name: 'on("startProjectile", (player: Player, pos: Vector3, dir: Vector3, ammoHash: number, weaponHash: number) => boolean | void)'
+  href: api/alt-server.html#_altmp_altv_types_alt_server_on_26
+- uid: '@altmp/altv-types.alt-server.on_27'
+  name: 'on("playerWeaponChange", (player: Player, oldWeapon: number, newWeapon: number) => void)'
+  href: api/alt-server.html#_altmp_altv_types_alt_server_on_27
 - uid: '@altmp/altv-types.alt-server.on_3'
   name: 'on("anyResourceStop", (resourceName: string) => void)'
   href: api/alt-server.html#_altmp_altv_types_alt_server_on_3
@@ -1355,10 +1383,10 @@ references:
   name: 'on("explosion", (source: Entity, type: number, pos: Vector3, fx: number) => boolean | void)'
   href: api/alt-server.html#_altmp_altv_types_alt_server_on_7
 - uid: '@altmp/altv-types.alt-server.on_8'
-  name: 'on("playerChangedVehicleSeat", (player: Player, vehicle: Vehicle, oldSeat: number, newSeat: number) => void)'
+  name: 'on("explosion", (source: Entity, type: number, pos: Vector3, fx: number, target: Entity) => boolean | void)'
   href: api/alt-server.html#_altmp_altv_types_alt_server_on_8
 - uid: '@altmp/altv-types.alt-server.on_9'
-  name: 'on("playerConnect", (player: Player) => void)'
+  name: 'on("playerChangedVehicleSeat", (player: Player, vehicle: Vehicle, oldSeat: number, newSeat: number) => void)'
   href: api/alt-server.html#_altmp_altv_types_alt_server_on_9
 - uid: '@altmp/altv-types.alt-server.onClient'
   name: 'onClient(string, (args: any[]) => void)'
