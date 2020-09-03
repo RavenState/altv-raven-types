@@ -198,42 +198,6 @@ references:
 - uid: '@altmp/altv-types.alt-client.Discord.requestOAuth2Token'
   name: requestOAuth2Token()
   href: api/alt-client.Discord.html#_altmp_altv_types_alt_client_Discord_requestOAuth2Token
-- uid: '@altmp/altv-types.alt-client.DiscordOAuth2Token'
-  name: DiscordOAuth2Token
-  href: api/alt-client.DiscordOAuth2Token.html#_altmp_altv_types_alt_client_DiscordOAuth2Token
-  fullName: DiscordOAuth2Token
-- uid: '@altmp/altv-types.alt-client.DiscordOAuth2Token.expires'
-  name: expires
-  href: api/alt-client.DiscordOAuth2Token.html#_altmp_altv_types_alt_client_DiscordOAuth2Token_expires
-  fullName: expires
-- uid: '@altmp/altv-types.alt-client.DiscordOAuth2Token.scopes'
-  name: scopes
-  href: api/alt-client.DiscordOAuth2Token.html#_altmp_altv_types_alt_client_DiscordOAuth2Token_scopes
-  fullName: scopes
-- uid: '@altmp/altv-types.alt-client.DiscordOAuth2Token.token'
-  name: token
-  href: api/alt-client.DiscordOAuth2Token.html#_altmp_altv_types_alt_client_DiscordOAuth2Token_token
-  fullName: token
-- uid: '@altmp/altv-types.alt-client.DiscordUser'
-  name: DiscordUser
-  href: api/alt-client.DiscordUser.html#_altmp_altv_types_alt_client_DiscordUser
-  fullName: DiscordUser
-- uid: '@altmp/altv-types.alt-client.DiscordUser.avatar'
-  name: avatar
-  href: api/alt-client.DiscordUser.html#_altmp_altv_types_alt_client_DiscordUser_avatar
-  fullName: avatar
-- uid: '@altmp/altv-types.alt-client.DiscordUser.discriminator'
-  name: discriminator
-  href: api/alt-client.DiscordUser.html#_altmp_altv_types_alt_client_DiscordUser_discriminator
-  fullName: discriminator
-- uid: '@altmp/altv-types.alt-client.DiscordUser.id'
-  name: id
-  href: api/alt-client.DiscordUser.html#_altmp_altv_types_alt_client_DiscordUser_id
-  fullName: id
-- uid: '@altmp/altv-types.alt-client.DiscordUser.name'
-  name: name
-  href: api/alt-client.DiscordUser.html#_altmp_altv_types_alt_client_DiscordUser_name
-  fullName: name
 - uid: '@altmp/altv-types.alt-client.emit'
   name: emit(string, any[])
   href: api/alt-client.html#_altmp_altv_types_alt_client_emit
@@ -605,6 +569,42 @@ references:
 - uid: '@altmp/altv-types.alt-client.hasSyncedMeta'
   name: hasSyncedMeta(string)
   href: api/alt-client.html#_altmp_altv_types_alt_client_hasSyncedMeta
+- uid: '@altmp/altv-types.alt-client.IDiscordOAuth2Token'
+  name: IDiscordOAuth2Token
+  href: api/alt-client.IDiscordOAuth2Token.html#_altmp_altv_types_alt_client_IDiscordOAuth2Token
+  fullName: IDiscordOAuth2Token
+- uid: '@altmp/altv-types.alt-client.IDiscordOAuth2Token.expires'
+  name: expires
+  href: api/alt-client.IDiscordOAuth2Token.html#_altmp_altv_types_alt_client_IDiscordOAuth2Token_expires
+  fullName: expires
+- uid: '@altmp/altv-types.alt-client.IDiscordOAuth2Token.scopes'
+  name: scopes
+  href: api/alt-client.IDiscordOAuth2Token.html#_altmp_altv_types_alt_client_IDiscordOAuth2Token_scopes
+  fullName: scopes
+- uid: '@altmp/altv-types.alt-client.IDiscordOAuth2Token.token'
+  name: token
+  href: api/alt-client.IDiscordOAuth2Token.html#_altmp_altv_types_alt_client_IDiscordOAuth2Token_token
+  fullName: token
+- uid: '@altmp/altv-types.alt-client.IDiscordUser'
+  name: IDiscordUser
+  href: api/alt-client.IDiscordUser.html#_altmp_altv_types_alt_client_IDiscordUser
+  fullName: IDiscordUser
+- uid: '@altmp/altv-types.alt-client.IDiscordUser.avatar'
+  name: avatar
+  href: api/alt-client.IDiscordUser.html#_altmp_altv_types_alt_client_IDiscordUser_avatar
+  fullName: avatar
+- uid: '@altmp/altv-types.alt-client.IDiscordUser.discriminator'
+  name: discriminator
+  href: api/alt-client.IDiscordUser.html#_altmp_altv_types_alt_client_IDiscordUser_discriminator
+  fullName: discriminator
+- uid: '@altmp/altv-types.alt-client.IDiscordUser.id'
+  name: id
+  href: api/alt-client.IDiscordUser.html#_altmp_altv_types_alt_client_IDiscordUser_id
+  fullName: id
+- uid: '@altmp/altv-types.alt-client.IDiscordUser.name'
+  name: name
+  href: api/alt-client.IDiscordUser.html#_altmp_altv_types_alt_client_IDiscordUser_name
+  fullName: name
 - uid: '@altmp/altv-types.alt-client.isConsoleOpen'
   name: isConsoleOpen()
   href: api/alt-client.html#_altmp_altv_types_alt_client_isConsoleOpen
@@ -617,6 +617,34 @@ references:
 - uid: '@altmp/altv-types.alt-client.isTextureExistInArchetype'
   name: isTextureExistInArchetype(number, string)
   href: api/alt-client.html#_altmp_altv_types_alt_client_isTextureExistInArchetype
+- uid: '@altmp/altv-types.alt-client.IVector2'
+  name: IVector2
+  href: api/alt-client.IVector2.html#_altmp_altv_types_alt_client_IVector2
+  fullName: IVector2
+- uid: '@altmp/altv-types.alt-client.IVector2.x'
+  name: x
+  href: api/alt-client.IVector2.html#_altmp_altv_types_alt_client_IVector2_x
+  fullName: x
+- uid: '@altmp/altv-types.alt-client.IVector2.y'
+  name: y
+  href: api/alt-client.IVector2.html#_altmp_altv_types_alt_client_IVector2_y
+  fullName: y
+- uid: '@altmp/altv-types.alt-client.IVector3'
+  name: IVector3
+  href: api/alt-client.IVector3.html#_altmp_altv_types_alt_client_IVector3
+  fullName: IVector3
+- uid: '@altmp/altv-types.alt-client.IVector3.x'
+  name: x
+  href: api/alt-client.IVector3.html#_altmp_altv_types_alt_client_IVector3_x
+  fullName: x
+- uid: '@altmp/altv-types.alt-client.IVector3.y'
+  name: y
+  href: api/alt-client.IVector3.html#_altmp_altv_types_alt_client_IVector3_y
+  fullName: y
+- uid: '@altmp/altv-types.alt-client.IVector3.z'
+  name: z
+  href: api/alt-client.IVector3.html#_altmp_altv_types_alt_client_IVector3_z
+  fullName: z
 - uid: '@altmp/altv-types.alt-client.LocalStorage'
   name: LocalStorage
   href: api/alt-client.LocalStorage.html#_altmp_altv_types_alt_client_LocalStorage
@@ -877,7 +905,7 @@ references:
   name: setCamFrozen(boolean)
   href: api/alt-client.html#_altmp_altv_types_alt_client_setCamFrozen
 - uid: '@altmp/altv-types.alt-client.setCursorPos'
-  name: setCursorPos(Vector2)
+  name: setCursorPos(IVector2)
   href: api/alt-client.html#_altmp_altv_types_alt_client_setCursorPos
 - uid: '@altmp/altv-types.alt-client.setInterval'
   name: setInterval(() => void, number)
@@ -916,18 +944,6 @@ references:
 - uid: '@altmp/altv-types.alt-client.toggleVoiceControls'
   name: toggleVoiceControls(boolean)
   href: api/alt-client.html#_altmp_altv_types_alt_client_toggleVoiceControls
-- uid: '@altmp/altv-types.alt-client.Vector2'
-  name: Vector2
-  href: api/alt-client.Vector2.html#_altmp_altv_types_alt_client_Vector2
-  fullName: Vector2
-- uid: '@altmp/altv-types.alt-client.Vector2.x'
-  name: x
-  href: api/alt-client.Vector2.html#_altmp_altv_types_alt_client_Vector2_x
-  fullName: x
-- uid: '@altmp/altv-types.alt-client.Vector2.y'
-  name: y
-  href: api/alt-client.Vector2.html#_altmp_altv_types_alt_client_Vector2_y
-  fullName: y
 - uid: '@altmp/altv-types.alt-client.Vector3'
   name: Vector3
   href: api/alt-client.Vector3.html#_altmp_altv_types_alt_client_Vector3
@@ -935,6 +951,12 @@ references:
 - uid: '@altmp/altv-types.alt-client.Vector3.constructor'
   name: Vector3(number, number, number)
   href: api/alt-client.Vector3.html#_altmp_altv_types_alt_client_Vector3_constructor
+- uid: '@altmp/altv-types.alt-client.Vector3.constructor_1'
+  name: Vector3(number[])
+  href: api/alt-client.Vector3.html#_altmp_altv_types_alt_client_Vector3_constructor_1
+- uid: '@altmp/altv-types.alt-client.Vector3.constructor_2'
+  name: Vector3(IVector3)
+  href: api/alt-client.Vector3.html#_altmp_altv_types_alt_client_Vector3_constructor_2
 - uid: '@altmp/altv-types.alt-client.Vector3.x'
   name: x
   href: api/alt-client.Vector3.html#_altmp_altv_types_alt_client_Vector3_x
@@ -1286,6 +1308,42 @@ references:
   name: weapon
   href: api/alt-server.IFireInfo.html#_altmp_altv_types_alt_server_IFireInfo_weapon
   fullName: weapon
+- uid: '@altmp/altv-types.alt-server.IVector3'
+  name: IVector3
+  href: api/alt-server.IVector3.html#_altmp_altv_types_alt_server_IVector3
+  fullName: IVector3
+- uid: '@altmp/altv-types.alt-server.IVector3.x'
+  name: x
+  href: api/alt-server.IVector3.html#_altmp_altv_types_alt_server_IVector3_x
+  fullName: x
+- uid: '@altmp/altv-types.alt-server.IVector3.y'
+  name: y
+  href: api/alt-server.IVector3.html#_altmp_altv_types_alt_server_IVector3_y
+  fullName: y
+- uid: '@altmp/altv-types.alt-server.IVector3.z'
+  name: z
+  href: api/alt-server.IVector3.html#_altmp_altv_types_alt_server_IVector3_z
+  fullName: z
+- uid: '@altmp/altv-types.alt-server.IVehicleNeon'
+  name: IVehicleNeon
+  href: api/alt-server.IVehicleNeon.html#_altmp_altv_types_alt_server_IVehicleNeon
+  fullName: IVehicleNeon
+- uid: '@altmp/altv-types.alt-server.IVehicleNeon.back'
+  name: back
+  href: api/alt-server.IVehicleNeon.html#_altmp_altv_types_alt_server_IVehicleNeon_back
+  fullName: back
+- uid: '@altmp/altv-types.alt-server.IVehicleNeon.front'
+  name: front
+  href: api/alt-server.IVehicleNeon.html#_altmp_altv_types_alt_server_IVehicleNeon_front
+  fullName: front
+- uid: '@altmp/altv-types.alt-server.IVehicleNeon.left'
+  name: left
+  href: api/alt-server.IVehicleNeon.html#_altmp_altv_types_alt_server_IVehicleNeon_left
+  fullName: left
+- uid: '@altmp/altv-types.alt-server.IVehicleNeon.right'
+  name: right
+  href: api/alt-server.IVehicleNeon.html#_altmp_altv_types_alt_server_IVehicleNeon_right
+  fullName: right
 - uid: '@altmp/altv-types.alt-server.log'
   name: log(any[])
   href: api/alt-server.html#_altmp_altv_types_alt_server_log
@@ -1574,6 +1632,12 @@ references:
 - uid: '@altmp/altv-types.alt-server.Vector3.constructor'
   name: Vector3(number, number, number)
   href: api/alt-server.Vector3.html#_altmp_altv_types_alt_server_Vector3_constructor
+- uid: '@altmp/altv-types.alt-server.Vector3.constructor_1'
+  name: Vector3(number[])
+  href: api/alt-server.Vector3.html#_altmp_altv_types_alt_server_Vector3_constructor_1
+- uid: '@altmp/altv-types.alt-server.Vector3.constructor_2'
+  name: Vector3(IVector3)
+  href: api/alt-server.Vector3.html#_altmp_altv_types_alt_server_Vector3_constructor_2
 - uid: '@altmp/altv-types.alt-server.Vector3.x'
   name: x
   href: api/alt-server.Vector3.html#_altmp_altv_types_alt_server_Vector3_x
@@ -1921,26 +1985,6 @@ references:
   name: windowTint
   href: api/alt-server.Vehicle.html#_altmp_altv_types_alt_server_Vehicle_windowTint
   fullName: windowTint
-- uid: '@altmp/altv-types.alt-server.VehicleNeon'
-  name: VehicleNeon
-  href: api/alt-server.VehicleNeon.html#_altmp_altv_types_alt_server_VehicleNeon
-  fullName: VehicleNeon
-- uid: '@altmp/altv-types.alt-server.VehicleNeon.back'
-  name: back
-  href: api/alt-server.VehicleNeon.html#_altmp_altv_types_alt_server_VehicleNeon_back
-  fullName: back
-- uid: '@altmp/altv-types.alt-server.VehicleNeon.front'
-  name: front
-  href: api/alt-server.VehicleNeon.html#_altmp_altv_types_alt_server_VehicleNeon_front
-  fullName: front
-- uid: '@altmp/altv-types.alt-server.VehicleNeon.left'
-  name: left
-  href: api/alt-server.VehicleNeon.html#_altmp_altv_types_alt_server_VehicleNeon_left
-  fullName: left
-- uid: '@altmp/altv-types.alt-server.VehicleNeon.right'
-  name: right
-  href: api/alt-server.VehicleNeon.html#_altmp_altv_types_alt_server_VehicleNeon_right
-  fullName: right
 - uid: '@altmp/altv-types.alt-server.VoiceChannel'
   name: VoiceChannel
   href: api/alt-server.VoiceChannel.html#_altmp_altv_types_alt_server_VoiceChannel
