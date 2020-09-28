@@ -42,6 +42,31 @@ references:
   name: valid
   href: api/alt-client.BaseObject.html#_altmp_altv_types_alt_client_BaseObject_valid
   fullName: valid
+- uid: '@altmp/altv-types.alt-client.BaseObjectType'
+  name: BaseObjectType
+  href: api/alt-client.BaseObjectType.html#_altmp_altv_types_alt_client_BaseObjectType
+  fullName: BaseObjectType
+- uid: '@altmp/altv-types.alt-client.BaseObjectType.Blip'
+  name: Blip
+  href: api/alt-client.BaseObjectType.html#_altmp_altv_types_alt_client_BaseObjectType_Blip
+- uid: '@altmp/altv-types.alt-client.BaseObjectType.Checkpoint'
+  name: Checkpoint
+  href: api/alt-client.BaseObjectType.html#_altmp_altv_types_alt_client_BaseObjectType_Checkpoint
+- uid: '@altmp/altv-types.alt-client.BaseObjectType.Colshape'
+  name: Colshape
+  href: api/alt-client.BaseObjectType.html#_altmp_altv_types_alt_client_BaseObjectType_Colshape
+- uid: '@altmp/altv-types.alt-client.BaseObjectType.Player'
+  name: Player
+  href: api/alt-client.BaseObjectType.html#_altmp_altv_types_alt_client_BaseObjectType_Player
+- uid: '@altmp/altv-types.alt-client.BaseObjectType.Vehicle'
+  name: Vehicle
+  href: api/alt-client.BaseObjectType.html#_altmp_altv_types_alt_client_BaseObjectType_Vehicle
+- uid: '@altmp/altv-types.alt-client.BaseObjectType.VoiceChannel'
+  name: VoiceChannel
+  href: api/alt-client.BaseObjectType.html#_altmp_altv_types_alt_client_BaseObjectType_VoiceChannel
+- uid: '@altmp/altv-types.alt-client.BaseObjectType.WebView'
+  name: WebView
+  href: api/alt-client.BaseObjectType.html#_altmp_altv_types_alt_client_BaseObjectType_WebView
 - uid: '@altmp/altv-types.alt-client.beginScaleformMovieMethodMinimap'
   name: beginScaleformMovieMethodMinimap(string)
   href: api/alt-client.html#_altmp_altv_types_alt_client_beginScaleformMovieMethodMinimap
@@ -257,11 +282,24 @@ references:
   name: exists(string)
   href: api/alt-client.File.html#_altmp_altv_types_alt_client_File_exists
 - uid: '@altmp/altv-types.alt-client.File.read'
-  name: read(string, "utf-8" | "utf-16")
+  name: read(string, Utf8 | Utf16)
   href: api/alt-client.File.html#_altmp_altv_types_alt_client_File_read
 - uid: '@altmp/altv-types.alt-client.File.read_1'
-  name: read(string, "binary")
+  name: read(string, Binary)
   href: api/alt-client.File.html#_altmp_altv_types_alt_client_File_read_1
+- uid: '@altmp/altv-types.alt-client.FileEncoding'
+  name: FileEncoding
+  href: api/alt-client.FileEncoding.html#_altmp_altv_types_alt_client_FileEncoding
+  fullName: FileEncoding
+- uid: '@altmp/altv-types.alt-client.FileEncoding.Binary'
+  name: Binary
+  href: api/alt-client.FileEncoding.html#_altmp_altv_types_alt_client_FileEncoding_Binary
+- uid: '@altmp/altv-types.alt-client.FileEncoding.Utf16'
+  name: Utf16
+  href: api/alt-client.FileEncoding.html#_altmp_altv_types_alt_client_FileEncoding_Utf16
+- uid: '@altmp/altv-types.alt-client.FileEncoding.Utf8'
+  name: Utf8
+  href: api/alt-client.FileEncoding.html#_altmp_altv_types_alt_client_FileEncoding_Utf8
 - uid: '@altmp/altv-types.alt-client.gameControlsEnabled'
   name: gameControlsEnabled()
   href: api/alt-client.html#_altmp_altv_types_alt_client_gameControlsEnabled
@@ -317,10 +355,10 @@ references:
   name: brakeBiasRear
   href: api/alt-client.HandlingData.html#_altmp_altv_types_alt_client_HandlingData_brakeBiasRear
   fullName: brakeBiasRear
-- uid: '@altmp/altv-types.alt-client.HandlingData.breakForce'
-  name: breakForce
-  href: api/alt-client.HandlingData.html#_altmp_altv_types_alt_client_HandlingData_breakForce
-  fullName: breakForce
+- uid: '@altmp/altv-types.alt-client.HandlingData.brakeForce'
+  name: brakeForce
+  href: api/alt-client.HandlingData.html#_altmp_altv_types_alt_client_HandlingData_brakeForce
+  fullName: brakeForce
 - uid: '@altmp/altv-types.alt-client.HandlingData.camberStiffnesss'
   name: camberStiffnesss
   href: api/alt-client.HandlingData.html#_altmp_altv_types_alt_client_HandlingData_camberStiffnesss
@@ -369,9 +407,9 @@ references:
   name: engineDamageMult
   href: api/alt-client.HandlingData.html#_altmp_altv_types_alt_client_HandlingData_engineDamageMult
   fullName: engineDamageMult
-- uid: '@altmp/altv-types.alt-client.HandlingData.getForModel'
-  name: getForModel(number)
-  href: api/alt-client.HandlingData.html#_altmp_altv_types_alt_client_HandlingData_getForModel
+- uid: '@altmp/altv-types.alt-client.HandlingData.getForHandlingName'
+  name: getForHandlingName(number)
+  href: api/alt-client.HandlingData.html#_altmp_altv_types_alt_client_HandlingData_getForHandlingName
 - uid: '@altmp/altv-types.alt-client.HandlingData.handBrakeForce'
   name: handBrakeForce
   href: api/alt-client.HandlingData.html#_altmp_altv_types_alt_client_HandlingData_handBrakeForce
@@ -569,6 +607,82 @@ references:
 - uid: '@altmp/altv-types.alt-client.hasSyncedMeta'
   name: hasSyncedMeta(string)
   href: api/alt-client.html#_altmp_altv_types_alt_client_hasSyncedMeta
+- uid: '@altmp/altv-types.alt-client.IClientEvent'
+  name: IClientEvent
+  href: api/alt-client.IClientEvent.html#_altmp_altv_types_alt_client_IClientEvent
+  fullName: IClientEvent
+- uid: '@altmp/altv-types.alt-client.IClientEvent.anyResourceError'
+  name: anyResourceError
+  href: api/alt-client.IClientEvent.html#_altmp_altv_types_alt_client_IClientEvent_anyResourceError
+  fullName: anyResourceError
+- uid: '@altmp/altv-types.alt-client.IClientEvent.anyResourceStart'
+  name: anyResourceStart
+  href: api/alt-client.IClientEvent.html#_altmp_altv_types_alt_client_IClientEvent_anyResourceStart
+  fullName: anyResourceStart
+- uid: '@altmp/altv-types.alt-client.IClientEvent.anyResourceStop'
+  name: anyResourceStop
+  href: api/alt-client.IClientEvent.html#_altmp_altv_types_alt_client_IClientEvent_anyResourceStop
+  fullName: anyResourceStop
+- uid: '@altmp/altv-types.alt-client.IClientEvent.connectionComplete'
+  name: connectionComplete
+  href: api/alt-client.IClientEvent.html#_altmp_altv_types_alt_client_IClientEvent_connectionComplete
+  fullName: connectionComplete
+- uid: '@altmp/altv-types.alt-client.IClientEvent.consoleCommand'
+  name: consoleCommand
+  href: api/alt-client.IClientEvent.html#_altmp_altv_types_alt_client_IClientEvent_consoleCommand
+  fullName: consoleCommand
+- uid: '@altmp/altv-types.alt-client.IClientEvent.disconnect'
+  name: disconnect
+  href: api/alt-client.IClientEvent.html#_altmp_altv_types_alt_client_IClientEvent_disconnect
+  fullName: disconnect
+- uid: '@altmp/altv-types.alt-client.IClientEvent.gameEntityCreate'
+  name: gameEntityCreate
+  href: api/alt-client.IClientEvent.html#_altmp_altv_types_alt_client_IClientEvent_gameEntityCreate
+  fullName: gameEntityCreate
+- uid: '@altmp/altv-types.alt-client.IClientEvent.gameEntityDestroy'
+  name: gameEntityDestroy
+  href: api/alt-client.IClientEvent.html#_altmp_altv_types_alt_client_IClientEvent_gameEntityDestroy
+  fullName: gameEntityDestroy
+- uid: '@altmp/altv-types.alt-client.IClientEvent.globalMetaChange'
+  name: globalMetaChange
+  href: api/alt-client.IClientEvent.html#_altmp_altv_types_alt_client_IClientEvent_globalMetaChange
+  fullName: globalMetaChange
+- uid: '@altmp/altv-types.alt-client.IClientEvent.globalSyncedMetaChange'
+  name: globalSyncedMetaChange
+  href: api/alt-client.IClientEvent.html#_altmp_altv_types_alt_client_IClientEvent_globalSyncedMetaChange
+  fullName: globalSyncedMetaChange
+- uid: '@altmp/altv-types.alt-client.IClientEvent.keyDown'
+  name: keyDown
+  href: api/alt-client.IClientEvent.html#_altmp_altv_types_alt_client_IClientEvent_keyDown
+  fullName: keyDown
+- uid: '@altmp/altv-types.alt-client.IClientEvent.keyUp'
+  name: keyUp
+  href: api/alt-client.IClientEvent.html#_altmp_altv_types_alt_client_IClientEvent_keyUp
+  fullName: keyUp
+- uid: '@altmp/altv-types.alt-client.IClientEvent.removeEntity'
+  name: removeEntity
+  href: api/alt-client.IClientEvent.html#_altmp_altv_types_alt_client_IClientEvent_removeEntity
+  fullName: removeEntity
+- uid: '@altmp/altv-types.alt-client.IClientEvent.render'
+  name: render
+  href: api/alt-client.IClientEvent.html#_altmp_altv_types_alt_client_IClientEvent_render
+  fullName: render
+- uid: '@altmp/altv-types.alt-client.IClientEvent.resourceStart'
+  name: resourceStart
+  href: api/alt-client.IClientEvent.html#_altmp_altv_types_alt_client_IClientEvent_resourceStart
+  fullName: resourceStart
+- uid: '@altmp/altv-types.alt-client.IClientEvent.resourceStop'
+  name: resourceStop
+  href: api/alt-client.IClientEvent.html#_altmp_altv_types_alt_client_IClientEvent_resourceStop
+  fullName: resourceStop
+- uid: '@altmp/altv-types.alt-client.IClientEvent.streamSyncedMetaChange'
+  name: streamSyncedMetaChange
+  href: api/alt-client.IClientEvent.html#_altmp_altv_types_alt_client_IClientEvent_streamSyncedMetaChange
+  fullName: streamSyncedMetaChange
+- uid: '@altmp/altv-types.alt-client.IClientEvent.syncedMetaChange'
+  name: syncedMetaChange
+  href: api/alt-client.IClientEvent.html#_altmp_altv_types_alt_client_IClientEvent_syncedMetaChange
+  fullName: syncedMetaChange
 - uid: '@altmp/altv-types.alt-client.IDiscordOAuth2Token'
   name: IDiscordOAuth2Token
   href: api/alt-client.IDiscordOAuth2Token.html#_altmp_altv_types_alt_client_IDiscordOAuth2Token
@@ -611,6 +725,9 @@ references:
 - uid: '@altmp/altv-types.alt-client.isInSandbox'
   name: isInSandbox()
   href: api/alt-client.html#_altmp_altv_types_alt_client_isInSandbox
+- uid: '@altmp/altv-types.alt-client.isInStreamerMode'
+  name: isInStreamerMode()
+  href: api/alt-client.html#_altmp_altv_types_alt_client_isInStreamerMode
 - uid: '@altmp/altv-types.alt-client.isMenuOpen'
   name: isMenuOpen()
   href: api/alt-client.html#_altmp_altv_types_alt_client_isMenuOpen
@@ -645,6 +762,106 @@ references:
   name: z
   href: api/alt-client.IVector3.html#_altmp_altv_types_alt_client_IVector3_z
   fullName: z
+- uid: '@altmp/altv-types.alt-client.Locale'
+  name: Locale
+  href: api/alt-client.Locale.html#_altmp_altv_types_alt_client_Locale
+  fullName: Locale
+- uid: '@altmp/altv-types.alt-client.Locale.Arabic'
+  name: Arabic
+  href: api/alt-client.Locale.html#_altmp_altv_types_alt_client_Locale_Arabic
+- uid: '@altmp/altv-types.alt-client.Locale.Belarusian'
+  name: Belarusian
+  href: api/alt-client.Locale.html#_altmp_altv_types_alt_client_Locale_Belarusian
+- uid: '@altmp/altv-types.alt-client.Locale.BrazilianPortuguese'
+  name: BrazilianPortuguese
+  href: api/alt-client.Locale.html#_altmp_altv_types_alt_client_Locale_BrazilianPortuguese
+- uid: '@altmp/altv-types.alt-client.Locale.ChineseSimplified'
+  name: ChineseSimplified
+  href: api/alt-client.Locale.html#_altmp_altv_types_alt_client_Locale_ChineseSimplified
+- uid: '@altmp/altv-types.alt-client.Locale.ChineseTraditional'
+  name: ChineseTraditional
+  href: api/alt-client.Locale.html#_altmp_altv_types_alt_client_Locale_ChineseTraditional
+- uid: '@altmp/altv-types.alt-client.Locale.Czech'
+  name: Czech
+  href: api/alt-client.Locale.html#_altmp_altv_types_alt_client_Locale_Czech
+- uid: '@altmp/altv-types.alt-client.Locale.English'
+  name: English
+  href: api/alt-client.Locale.html#_altmp_altv_types_alt_client_Locale_English
+- uid: '@altmp/altv-types.alt-client.Locale.Farsi'
+  name: Farsi
+  href: api/alt-client.Locale.html#_altmp_altv_types_alt_client_Locale_Farsi
+- uid: '@altmp/altv-types.alt-client.Locale.French'
+  name: French
+  href: api/alt-client.Locale.html#_altmp_altv_types_alt_client_Locale_French
+- uid: '@altmp/altv-types.alt-client.Locale.German'
+  name: German
+  href: api/alt-client.Locale.html#_altmp_altv_types_alt_client_Locale_German
+- uid: '@altmp/altv-types.alt-client.Locale.Hebrew'
+  name: Hebrew
+  href: api/alt-client.Locale.html#_altmp_altv_types_alt_client_Locale_Hebrew
+- uid: '@altmp/altv-types.alt-client.Locale.Hindi'
+  name: Hindi
+  href: api/alt-client.Locale.html#_altmp_altv_types_alt_client_Locale_Hindi
+- uid: '@altmp/altv-types.alt-client.Locale.Hungarian'
+  name: Hungarian
+  href: api/alt-client.Locale.html#_altmp_altv_types_alt_client_Locale_Hungarian
+- uid: '@altmp/altv-types.alt-client.Locale.Indonesian'
+  name: Indonesian
+  href: api/alt-client.Locale.html#_altmp_altv_types_alt_client_Locale_Indonesian
+- uid: '@altmp/altv-types.alt-client.Locale.Italian'
+  name: Italian
+  href: api/alt-client.Locale.html#_altmp_altv_types_alt_client_Locale_Italian
+- uid: '@altmp/altv-types.alt-client.Locale.Latvian'
+  name: Latvian
+  href: api/alt-client.Locale.html#_altmp_altv_types_alt_client_Locale_Latvian
+- uid: '@altmp/altv-types.alt-client.Locale.Lithuanian'
+  name: Lithuanian
+  href: api/alt-client.Locale.html#_altmp_altv_types_alt_client_Locale_Lithuanian
+- uid: '@altmp/altv-types.alt-client.Locale.Malayalam'
+  name: Malayalam
+  href: api/alt-client.Locale.html#_altmp_altv_types_alt_client_Locale_Malayalam
+- uid: '@altmp/altv-types.alt-client.Locale.NorwegianBokmal'
+  name: NorwegianBokmal
+  href: api/alt-client.Locale.html#_altmp_altv_types_alt_client_Locale_NorwegianBokmal
+- uid: '@altmp/altv-types.alt-client.Locale.NorwegianNynorsk'
+  name: NorwegianNynorsk
+  href: api/alt-client.Locale.html#_altmp_altv_types_alt_client_Locale_NorwegianNynorsk
+- uid: '@altmp/altv-types.alt-client.Locale.Polish'
+  name: Polish
+  href: api/alt-client.Locale.html#_altmp_altv_types_alt_client_Locale_Polish
+- uid: '@altmp/altv-types.alt-client.Locale.Portugese'
+  name: Portugese
+  href: api/alt-client.Locale.html#_altmp_altv_types_alt_client_Locale_Portugese
+- uid: '@altmp/altv-types.alt-client.Locale.Romanian'
+  name: Romanian
+  href: api/alt-client.Locale.html#_altmp_altv_types_alt_client_Locale_Romanian
+- uid: '@altmp/altv-types.alt-client.Locale.Russian'
+  name: Russian
+  href: api/alt-client.Locale.html#_altmp_altv_types_alt_client_Locale_Russian
+- uid: '@altmp/altv-types.alt-client.Locale.Serbian'
+  name: Serbian
+  href: api/alt-client.Locale.html#_altmp_altv_types_alt_client_Locale_Serbian
+- uid: '@altmp/altv-types.alt-client.Locale.Slovak'
+  name: Slovak
+  href: api/alt-client.Locale.html#_altmp_altv_types_alt_client_Locale_Slovak
+- uid: '@altmp/altv-types.alt-client.Locale.Spanish'
+  name: Spanish
+  href: api/alt-client.Locale.html#_altmp_altv_types_alt_client_Locale_Spanish
+- uid: '@altmp/altv-types.alt-client.Locale.Tamil'
+  name: Tamil
+  href: api/alt-client.Locale.html#_altmp_altv_types_alt_client_Locale_Tamil
+- uid: '@altmp/altv-types.alt-client.Locale.Telugu'
+  name: Telugu
+  href: api/alt-client.Locale.html#_altmp_altv_types_alt_client_Locale_Telugu
+- uid: '@altmp/altv-types.alt-client.Locale.Thai'
+  name: Thai
+  href: api/alt-client.Locale.html#_altmp_altv_types_alt_client_Locale_Thai
+- uid: '@altmp/altv-types.alt-client.Locale.Turkish'
+  name: Turkish
+  href: api/alt-client.Locale.html#_altmp_altv_types_alt_client_Locale_Turkish
+- uid: '@altmp/altv-types.alt-client.Locale.Ukrainian'
+  name: Ukrainian
+  href: api/alt-client.Locale.html#_altmp_altv_types_alt_client_Locale_Ukrainian
 - uid: '@altmp/altv-types.alt-client.LocalStorage'
   name: LocalStorage
   href: api/alt-client.LocalStorage.html#_altmp_altv_types_alt_client_LocalStorage
@@ -759,59 +976,11 @@ references:
   name: 'offServer(string, (...args: any[]) => void)'
   href: api/alt-client.html#_altmp_altv_types_alt_client_offServer
 - uid: '@altmp/altv-types.alt-client.on'
-  name: 'on(string, (...args: any[]) => void)'
+  name: on<K extends keyof IClientEvent>(K, IClientEvent[K])
   href: api/alt-client.html#_altmp_altv_types_alt_client_on
 - uid: '@altmp/altv-types.alt-client.on_1'
-  name: 'on("anyResourceError", (resourceName: string) => void)'
+  name: 'on<S extends string>(Exclude<S, keyof IClientEvent>, (...args: any[]) => void)'
   href: api/alt-client.html#_altmp_altv_types_alt_client_on_1
-- uid: '@altmp/altv-types.alt-client.on_10'
-  name: 'on("keyup", (key: number) => void)'
-  href: api/alt-client.html#_altmp_altv_types_alt_client_on_10
-- uid: '@altmp/altv-types.alt-client.on_11'
-  name: 'on("removeEntity", (object: BaseObject) => void)'
-  href: api/alt-client.html#_altmp_altv_types_alt_client_on_11
-- uid: '@altmp/altv-types.alt-client.on_12'
-  name: 'on("resourceStart", (errored: boolean) => void)'
-  href: api/alt-client.html#_altmp_altv_types_alt_client_on_12
-- uid: '@altmp/altv-types.alt-client.on_13'
-  name: on("resourceStop", () => void)
-  href: api/alt-client.html#_altmp_altv_types_alt_client_on_13
-- uid: '@altmp/altv-types.alt-client.on_14'
-  name: 'on("syncedMetaChange", (entity: Entity, key: string, value: any, oldValue: any) => void)'
-  href: api/alt-client.html#_altmp_altv_types_alt_client_on_14
-- uid: '@altmp/altv-types.alt-client.on_15'
-  name: 'on("streamSyncedMetaChange", (entity: Entity, key: string, value: any, oldValue: any) => void)'
-  href: api/alt-client.html#_altmp_altv_types_alt_client_on_15
-- uid: '@altmp/altv-types.alt-client.on_16'
-  name: 'on("globalMetaChange", (key: string, value: any, oldValue: any) => void)'
-  href: api/alt-client.html#_altmp_altv_types_alt_client_on_16
-- uid: '@altmp/altv-types.alt-client.on_17'
-  name: 'on("globalSyncedMetaChange", (key: string, value: any, oldValue: any) => void)'
-  href: api/alt-client.html#_altmp_altv_types_alt_client_on_17
-- uid: '@altmp/altv-types.alt-client.on_2'
-  name: 'on("anyResourceStart", (resourceName: string) => void)'
-  href: api/alt-client.html#_altmp_altv_types_alt_client_on_2
-- uid: '@altmp/altv-types.alt-client.on_3'
-  name: 'on("anyResourceStop", (resourceName: string) => void)'
-  href: api/alt-client.html#_altmp_altv_types_alt_client_on_3
-- uid: '@altmp/altv-types.alt-client.on_4'
-  name: on("connectionComplete", () => void)
-  href: api/alt-client.html#_altmp_altv_types_alt_client_on_4
-- uid: '@altmp/altv-types.alt-client.on_5'
-  name: 'on("consoleCommand", (name: string, ...args: string[]) => void)'
-  href: api/alt-client.html#_altmp_altv_types_alt_client_on_5
-- uid: '@altmp/altv-types.alt-client.on_6'
-  name: on("disconnect", () => void)
-  href: api/alt-client.html#_altmp_altv_types_alt_client_on_6
-- uid: '@altmp/altv-types.alt-client.on_7'
-  name: 'on("gameEntityCreate", (entity: Entity) => void)'
-  href: api/alt-client.html#_altmp_altv_types_alt_client_on_7
-- uid: '@altmp/altv-types.alt-client.on_8'
-  name: 'on("gameEntityDestroy", (entity: Entity) => void)'
-  href: api/alt-client.html#_altmp_altv_types_alt_client_on_8
-- uid: '@altmp/altv-types.alt-client.on_9'
-  name: 'on("keydown", (key: number) => void)'
-  href: api/alt-client.html#_altmp_altv_types_alt_client_on_9
 - uid: '@altmp/altv-types.alt-client.onServer'
   name: 'onServer(string, (...args: any[]) => void)'
   href: api/alt-client.html#_altmp_altv_types_alt_client_onServer
@@ -898,9 +1067,6 @@ references:
   name: r
   href: api/alt-client.RGBA.html#_altmp_altv_types_alt_client_RGBA_r
   fullName: r
-- uid: '@altmp/altv-types.alt-client.saveScreenshot'
-  name: saveScreenshot(string)
-  href: api/alt-client.html#_altmp_altv_types_alt_client_saveScreenshot
 - uid: '@altmp/altv-types.alt-client.setCamFrozen'
   name: setCamFrozen(boolean)
   href: api/alt-client.html#_altmp_altv_types_alt_client_setCamFrozen
@@ -936,8 +1102,35 @@ references:
   href: api/alt-client.html#_altmp_altv_types_alt_client_showCursor
 - uid: '@altmp/altv-types.alt-client.StatName'
   name: StatName
-  href: api/alt-client.html#_altmp_altv_types_alt_client_StatName
+  href: api/alt-client.StatName.html#_altmp_altv_types_alt_client_StatName
   fullName: StatName
+- uid: '@altmp/altv-types.alt-client.StatName.Flying'
+  name: Flying
+  href: api/alt-client.StatName.html#_altmp_altv_types_alt_client_StatName_Flying
+- uid: '@altmp/altv-types.alt-client.StatName.LungCapacity'
+  name: LungCapacity
+  href: api/alt-client.StatName.html#_altmp_altv_types_alt_client_StatName_LungCapacity
+- uid: '@altmp/altv-types.alt-client.StatName.Shooting'
+  name: Shooting
+  href: api/alt-client.StatName.html#_altmp_altv_types_alt_client_StatName_Shooting
+- uid: '@altmp/altv-types.alt-client.StatName.Stamina'
+  name: Stamina
+  href: api/alt-client.StatName.html#_altmp_altv_types_alt_client_StatName_Stamina
+- uid: '@altmp/altv-types.alt-client.StatName.Stealth'
+  name: Stealth
+  href: api/alt-client.StatName.html#_altmp_altv_types_alt_client_StatName_Stealth
+- uid: '@altmp/altv-types.alt-client.StatName.Strength'
+  name: Strength
+  href: api/alt-client.StatName.html#_altmp_altv_types_alt_client_StatName_Strength
+- uid: '@altmp/altv-types.alt-client.StatName.Wheelie'
+  name: Wheelie
+  href: api/alt-client.StatName.html#_altmp_altv_types_alt_client_StatName_Wheelie
+- uid: '@altmp/altv-types.alt-client.takeScreenshot'
+  name: takeScreenshot(string)
+  href: api/alt-client.html#_altmp_altv_types_alt_client_takeScreenshot
+- uid: '@altmp/altv-types.alt-client.takeScreenshotBase64'
+  name: takeScreenshotBase64()
+  href: api/alt-client.html#_altmp_altv_types_alt_client_takeScreenshotBase64
 - uid: '@altmp/altv-types.alt-client.toggleGameControls'
   name: toggleGameControls(boolean)
   href: api/alt-client.html#_altmp_altv_types_alt_client_toggleGameControls
@@ -1078,10 +1271,145 @@ references:
   name: valid
   href: api/alt-server.BaseObject.html#_altmp_altv_types_alt_server_BaseObject_valid
   fullName: valid
+- uid: '@altmp/altv-types.alt-server.BaseObjectType'
+  name: BaseObjectType
+  href: api/alt-server.BaseObjectType.html#_altmp_altv_types_alt_server_BaseObjectType
+  fullName: BaseObjectType
+- uid: '@altmp/altv-types.alt-server.BaseObjectType.Blip'
+  name: Blip
+  href: api/alt-server.BaseObjectType.html#_altmp_altv_types_alt_server_BaseObjectType_Blip
+- uid: '@altmp/altv-types.alt-server.BaseObjectType.Checkpoint'
+  name: Checkpoint
+  href: api/alt-server.BaseObjectType.html#_altmp_altv_types_alt_server_BaseObjectType_Checkpoint
+- uid: '@altmp/altv-types.alt-server.BaseObjectType.Colshape'
+  name: Colshape
+  href: api/alt-server.BaseObjectType.html#_altmp_altv_types_alt_server_BaseObjectType_Colshape
+- uid: '@altmp/altv-types.alt-server.BaseObjectType.Player'
+  name: Player
+  href: api/alt-server.BaseObjectType.html#_altmp_altv_types_alt_server_BaseObjectType_Player
+- uid: '@altmp/altv-types.alt-server.BaseObjectType.Vehicle'
+  name: Vehicle
+  href: api/alt-server.BaseObjectType.html#_altmp_altv_types_alt_server_BaseObjectType_Vehicle
+- uid: '@altmp/altv-types.alt-server.BaseObjectType.VoiceChannel'
+  name: VoiceChannel
+  href: api/alt-server.BaseObjectType.html#_altmp_altv_types_alt_server_BaseObjectType_VoiceChannel
+- uid: '@altmp/altv-types.alt-server.BaseObjectType.WebView'
+  name: WebView
+  href: api/alt-server.BaseObjectType.html#_altmp_altv_types_alt_server_BaseObjectType_WebView
 - uid: '@altmp/altv-types.alt-server.Blip'
   name: Blip
   href: api/alt-server.Blip.html#_altmp_altv_types_alt_server_Blip
   fullName: Blip
+- uid: '@altmp/altv-types.alt-server.BlipType'
+  name: BlipType
+  href: api/alt-server.BlipType.html#_altmp_altv_types_alt_server_BlipType
+  fullName: BlipType
+- uid: '@altmp/altv-types.alt-server.BlipType.Area'
+  name: Area
+  href: api/alt-server.BlipType.html#_altmp_altv_types_alt_server_BlipType_Area
+- uid: '@altmp/altv-types.alt-server.BlipType.Cont'
+  name: Cont
+  href: api/alt-server.BlipType.html#_altmp_altv_types_alt_server_BlipType_Cont
+- uid: '@altmp/altv-types.alt-server.BlipType.Cop'
+  name: Cop
+  href: api/alt-server.BlipType.html#_altmp_altv_types_alt_server_BlipType_Cop
+- uid: '@altmp/altv-types.alt-server.BlipType.Destination'
+  name: Destination
+  href: api/alt-server.BlipType.html#_altmp_altv_types_alt_server_BlipType_Destination
+- uid: '@altmp/altv-types.alt-server.BlipType.Gallery'
+  name: Gallery
+  href: api/alt-server.BlipType.html#_altmp_altv_types_alt_server_BlipType_Gallery
+- uid: '@altmp/altv-types.alt-server.BlipType.Object'
+  name: Object
+  href: api/alt-server.BlipType.html#_altmp_altv_types_alt_server_BlipType_Object
+- uid: '@altmp/altv-types.alt-server.BlipType.Ped'
+  name: Ped
+  href: api/alt-server.BlipType.html#_altmp_altv_types_alt_server_BlipType_Ped
+- uid: '@altmp/altv-types.alt-server.BlipType.Pickup'
+  name: Pickup
+  href: api/alt-server.BlipType.html#_altmp_altv_types_alt_server_BlipType_Pickup
+- uid: '@altmp/altv-types.alt-server.BlipType.PickupObject'
+  name: PickupObject
+  href: api/alt-server.BlipType.html#_altmp_altv_types_alt_server_BlipType_PickupObject
+- uid: '@altmp/altv-types.alt-server.BlipType.PickupUnk'
+  name: PickupUnk
+  href: api/alt-server.BlipType.html#_altmp_altv_types_alt_server_BlipType_PickupUnk
+- uid: '@altmp/altv-types.alt-server.BlipType.Radius'
+  name: Radius
+  href: api/alt-server.BlipType.html#_altmp_altv_types_alt_server_BlipType_Radius
+- uid: '@altmp/altv-types.alt-server.BlipType.Vehicle'
+  name: Vehicle
+  href: api/alt-server.BlipType.html#_altmp_altv_types_alt_server_BlipType_Vehicle
+- uid: '@altmp/altv-types.alt-server.BodyPart'
+  name: BodyPart
+  href: api/alt-server.BodyPart.html#_altmp_altv_types_alt_server_BodyPart
+  fullName: BodyPart
+- uid: '@altmp/altv-types.alt-server.BodyPart.Chest'
+  name: Chest
+  href: api/alt-server.BodyPart.html#_altmp_altv_types_alt_server_BodyPart_Chest
+- uid: '@altmp/altv-types.alt-server.BodyPart.Head'
+  name: Head
+  href: api/alt-server.BodyPart.html#_altmp_altv_types_alt_server_BodyPart_Head
+- uid: '@altmp/altv-types.alt-server.BodyPart.LeftElbrow'
+  name: LeftElbrow
+  href: api/alt-server.BodyPart.html#_altmp_altv_types_alt_server_BodyPart_LeftElbrow
+- uid: '@altmp/altv-types.alt-server.BodyPart.LeftFoot'
+  name: LeftFoot
+  href: api/alt-server.BodyPart.html#_altmp_altv_types_alt_server_BodyPart_LeftFoot
+- uid: '@altmp/altv-types.alt-server.BodyPart.LeftHip'
+  name: LeftHip
+  href: api/alt-server.BodyPart.html#_altmp_altv_types_alt_server_BodyPart_LeftHip
+- uid: '@altmp/altv-types.alt-server.BodyPart.LeftLeg'
+  name: LeftLeg
+  href: api/alt-server.BodyPart.html#_altmp_altv_types_alt_server_BodyPart_LeftLeg
+- uid: '@altmp/altv-types.alt-server.BodyPart.LeftShoulder'
+  name: LeftShoulder
+  href: api/alt-server.BodyPart.html#_altmp_altv_types_alt_server_BodyPart_LeftShoulder
+- uid: '@altmp/altv-types.alt-server.BodyPart.LeftUpperArm'
+  name: LeftUpperArm
+  href: api/alt-server.BodyPart.html#_altmp_altv_types_alt_server_BodyPart_LeftUpperArm
+- uid: '@altmp/altv-types.alt-server.BodyPart.LeftWrist'
+  name: LeftWrist
+  href: api/alt-server.BodyPart.html#_altmp_altv_types_alt_server_BodyPart_LeftWrist
+- uid: '@altmp/altv-types.alt-server.BodyPart.LowerTorso'
+  name: LowerTorso
+  href: api/alt-server.BodyPart.html#_altmp_altv_types_alt_server_BodyPart_LowerTorso
+- uid: '@altmp/altv-types.alt-server.BodyPart.Neck'
+  name: Neck
+  href: api/alt-server.BodyPart.html#_altmp_altv_types_alt_server_BodyPart_Neck
+- uid: '@altmp/altv-types.alt-server.BodyPart.Pelvis'
+  name: Pelvis
+  href: api/alt-server.BodyPart.html#_altmp_altv_types_alt_server_BodyPart_Pelvis
+- uid: '@altmp/altv-types.alt-server.BodyPart.RightElbrow'
+  name: RightElbrow
+  href: api/alt-server.BodyPart.html#_altmp_altv_types_alt_server_BodyPart_RightElbrow
+- uid: '@altmp/altv-types.alt-server.BodyPart.RightFoot'
+  name: RightFoot
+  href: api/alt-server.BodyPart.html#_altmp_altv_types_alt_server_BodyPart_RightFoot
+- uid: '@altmp/altv-types.alt-server.BodyPart.RightHip'
+  name: RightHip
+  href: api/alt-server.BodyPart.html#_altmp_altv_types_alt_server_BodyPart_RightHip
+- uid: '@altmp/altv-types.alt-server.BodyPart.RightLeg'
+  name: RightLeg
+  href: api/alt-server.BodyPart.html#_altmp_altv_types_alt_server_BodyPart_RightLeg
+- uid: '@altmp/altv-types.alt-server.BodyPart.RightShoulder'
+  name: RightShoulder
+  href: api/alt-server.BodyPart.html#_altmp_altv_types_alt_server_BodyPart_RightShoulder
+- uid: '@altmp/altv-types.alt-server.BodyPart.RightUpperArm'
+  name: RightUpperArm
+  href: api/alt-server.BodyPart.html#_altmp_altv_types_alt_server_BodyPart_RightUpperArm
+- uid: '@altmp/altv-types.alt-server.BodyPart.RightWrist'
+  name: RightWrist
+  href: api/alt-server.BodyPart.html#_altmp_altv_types_alt_server_BodyPart_RightWrist
+- uid: '@altmp/altv-types.alt-server.BodyPart.UnderNeck'
+  name: UnderNeck
+  href: api/alt-server.BodyPart.html#_altmp_altv_types_alt_server_BodyPart_UnderNeck
+- uid: '@altmp/altv-types.alt-server.BodyPart.Unknown'
+  name: Unknown
+  href: api/alt-server.BodyPart.html#_altmp_altv_types_alt_server_BodyPart_Unknown
+- uid: '@altmp/altv-types.alt-server.BodyPart.UpperTorso'
+  name: UpperTorso
+  href: api/alt-server.BodyPart.html#_altmp_altv_types_alt_server_BodyPart_UpperTorso
 - uid: '@altmp/altv-types.alt-server.Checkpoint'
   name: Checkpoint
   href: api/alt-server.Checkpoint.html#_altmp_altv_types_alt_server_Checkpoint
@@ -1089,6 +1417,211 @@ references:
 - uid: '@altmp/altv-types.alt-server.Checkpoint.constructor'
   name: Checkpoint(number, number, number, number, number, number, number, number, number, number)
   href: api/alt-server.Checkpoint.html#_altmp_altv_types_alt_server_Checkpoint_constructor
+- uid: '@altmp/altv-types.alt-server.CheckpointType'
+  name: CheckpointType
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType
+  fullName: CheckpointType
+- uid: '@altmp/altv-types.alt-server.CheckpointType.Checkerboard'
+  name: Checkerboard
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_Checkerboard
+- uid: '@altmp/altv-types.alt-server.CheckpointType.CycleArrow'
+  name: CycleArrow
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_CycleArrow
+- uid: '@altmp/altv-types.alt-server.CheckpointType.Cylinder'
+  name: Cylinder
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_Cylinder
+- uid: '@altmp/altv-types.alt-server.CheckpointType.Cylinder1'
+  name: Cylinder1
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_Cylinder1
+- uid: '@altmp/altv-types.alt-server.CheckpointType.Cylinder2'
+  name: Cylinder2
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_Cylinder2
+- uid: '@altmp/altv-types.alt-server.CheckpointType.Cylinder3'
+  name: Cylinder3
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_Cylinder3
+- uid: '@altmp/altv-types.alt-server.CheckpointType.Cylinder4'
+  name: Cylinder4
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_Cylinder4
+- uid: '@altmp/altv-types.alt-server.CheckpointType.Cylinder5'
+  name: Cylinder5
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_Cylinder5
+- uid: '@altmp/altv-types.alt-server.CheckpointType.CylinderCheckerboard'
+  name: CylinderCheckerboard
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_CylinderCheckerboard
+- uid: '@altmp/altv-types.alt-server.CheckpointType.CylinderCheckerboard2'
+  name: CylinderCheckerboard2
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_CylinderCheckerboard2
+- uid: '@altmp/altv-types.alt-server.CheckpointType.CylinderCheckerboard3'
+  name: CylinderCheckerboard3
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_CylinderCheckerboard3
+- uid: '@altmp/altv-types.alt-server.CheckpointType.CylinderCheckerboard4'
+  name: CylinderCheckerboard4
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_CylinderCheckerboard4
+- uid: '@altmp/altv-types.alt-server.CheckpointType.CylinderCheckerboard5'
+  name: CylinderCheckerboard5
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_CylinderCheckerboard5
+- uid: '@altmp/altv-types.alt-server.CheckpointType.CylinderCycleArrow'
+  name: CylinderCycleArrow
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_CylinderCycleArrow
+- uid: '@altmp/altv-types.alt-server.CheckpointType.CylinderCycleArrow2'
+  name: CylinderCycleArrow2
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_CylinderCycleArrow2
+- uid: '@altmp/altv-types.alt-server.CheckpointType.CylinderCycleArrow3'
+  name: CylinderCycleArrow3
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_CylinderCycleArrow3
+- uid: '@altmp/altv-types.alt-server.CheckpointType.CylinderCycleArrow4'
+  name: CylinderCycleArrow4
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_CylinderCycleArrow4
+- uid: '@altmp/altv-types.alt-server.CheckpointType.CylinderCycleArrow5'
+  name: CylinderCycleArrow5
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_CylinderCycleArrow5
+- uid: '@altmp/altv-types.alt-server.CheckpointType.CylinderDoubleArrow'
+  name: CylinderDoubleArrow
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_CylinderDoubleArrow
+- uid: '@altmp/altv-types.alt-server.CheckpointType.CylinderDoubleArrow2'
+  name: CylinderDoubleArrow2
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_CylinderDoubleArrow2
+- uid: '@altmp/altv-types.alt-server.CheckpointType.CylinderDoubleArrow3'
+  name: CylinderDoubleArrow3
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_CylinderDoubleArrow3
+- uid: '@altmp/altv-types.alt-server.CheckpointType.CylinderDoubleArrow4'
+  name: CylinderDoubleArrow4
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_CylinderDoubleArrow4
+- uid: '@altmp/altv-types.alt-server.CheckpointType.CylinderDoubleArrow5'
+  name: CylinderDoubleArrow5
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_CylinderDoubleArrow5
+- uid: '@altmp/altv-types.alt-server.CheckpointType.CylinderSingleArrow'
+  name: CylinderSingleArrow
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_CylinderSingleArrow
+- uid: '@altmp/altv-types.alt-server.CheckpointType.CylinderSingleArrow2'
+  name: CylinderSingleArrow2
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_CylinderSingleArrow2
+- uid: '@altmp/altv-types.alt-server.CheckpointType.CylinderSingleArrow3'
+  name: CylinderSingleArrow3
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_CylinderSingleArrow3
+- uid: '@altmp/altv-types.alt-server.CheckpointType.CylinderSingleArrow4'
+  name: CylinderSingleArrow4
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_CylinderSingleArrow4
+- uid: '@altmp/altv-types.alt-server.CheckpointType.CylinderSingleArrow5'
+  name: CylinderSingleArrow5
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_CylinderSingleArrow5
+- uid: '@altmp/altv-types.alt-server.CheckpointType.CylinderTripleArrow'
+  name: CylinderTripleArrow
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_CylinderTripleArrow
+- uid: '@altmp/altv-types.alt-server.CheckpointType.CylinderTripleArrow2'
+  name: CylinderTripleArrow2
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_CylinderTripleArrow2
+- uid: '@altmp/altv-types.alt-server.CheckpointType.CylinderTripleArrow3'
+  name: CylinderTripleArrow3
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_CylinderTripleArrow3
+- uid: '@altmp/altv-types.alt-server.CheckpointType.CylinderTripleArrow4'
+  name: CylinderTripleArrow4
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_CylinderTripleArrow4
+- uid: '@altmp/altv-types.alt-server.CheckpointType.CylinderTripleArrow5'
+  name: CylinderTripleArrow5
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_CylinderTripleArrow5
+- uid: '@altmp/altv-types.alt-server.CheckpointType.CylinderWrench'
+  name: CylinderWrench
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_CylinderWrench
+- uid: '@altmp/altv-types.alt-server.CheckpointType.CylinderWrench2'
+  name: CylinderWrench2
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_CylinderWrench2
+- uid: '@altmp/altv-types.alt-server.CheckpointType.DoubleArrow'
+  name: DoubleArrow
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_DoubleArrow
+- uid: '@altmp/altv-types.alt-server.CheckpointType.Empty'
+  name: Empty
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_Empty
+- uid: '@altmp/altv-types.alt-server.CheckpointType.Empty2'
+  name: Empty2
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_Empty2
+- uid: '@altmp/altv-types.alt-server.CheckpointType.Empty3'
+  name: Empty3
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_Empty3
+- uid: '@altmp/altv-types.alt-server.CheckpointType.Empty4'
+  name: Empty4
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_Empty4
+- uid: '@altmp/altv-types.alt-server.CheckpointType.Empty5'
+  name: Empty5
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_Empty5
+- uid: '@altmp/altv-types.alt-server.CheckpointType.Empty6'
+  name: Empty6
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_Empty6
+- uid: '@altmp/altv-types.alt-server.CheckpointType.Ring'
+  name: Ring
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_Ring
+- uid: '@altmp/altv-types.alt-server.CheckpointType.RingBicycle'
+  name: RingBicycle
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_RingBicycle
+- uid: '@altmp/altv-types.alt-server.CheckpointType.RingBike'
+  name: RingBike
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_RingBike
+- uid: '@altmp/altv-types.alt-server.CheckpointType.RingBoat'
+  name: RingBoat
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_RingBoat
+- uid: '@altmp/altv-types.alt-server.CheckpointType.RingCar'
+  name: RingCar
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_RingCar
+- uid: '@altmp/altv-types.alt-server.CheckpointType.RingCheckerboard'
+  name: RingCheckerboard
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_RingCheckerboard
+- uid: '@altmp/altv-types.alt-server.CheckpointType.RingChopper'
+  name: RingChopper
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_RingChopper
+- uid: '@altmp/altv-types.alt-server.CheckpointType.RingCycleArrow'
+  name: RingCycleArrow
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_RingCycleArrow
+- uid: '@altmp/altv-types.alt-server.CheckpointType.RingDollar'
+  name: RingDollar
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_RingDollar
+- uid: '@altmp/altv-types.alt-server.CheckpointType.RingDoubleArrow'
+  name: RingDoubleArrow
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_RingDoubleArrow
+- uid: '@altmp/altv-types.alt-server.CheckpointType.RingJetpack'
+  name: RingJetpack
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_RingJetpack
+- uid: '@altmp/altv-types.alt-server.CheckpointType.RingParachute'
+  name: RingParachute
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_RingParachute
+- uid: '@altmp/altv-types.alt-server.CheckpointType.RingPlane'
+  name: RingPlane
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_RingPlane
+- uid: '@altmp/altv-types.alt-server.CheckpointType.RingPlaneDown'
+  name: RingPlaneDown
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_RingPlaneDown
+- uid: '@altmp/altv-types.alt-server.CheckpointType.RingPlaneLeft'
+  name: RingPlaneLeft
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_RingPlaneLeft
+- uid: '@altmp/altv-types.alt-server.CheckpointType.RingPlaneRight'
+  name: RingPlaneRight
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_RingPlaneRight
+- uid: '@altmp/altv-types.alt-server.CheckpointType.RingPlaneUp'
+  name: RingPlaneUp
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_RingPlaneUp
+- uid: '@altmp/altv-types.alt-server.CheckpointType.RingQuestionMark'
+  name: RingQuestionMark
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_RingQuestionMark
+- uid: '@altmp/altv-types.alt-server.CheckpointType.RingSingleArrow'
+  name: RingSingleArrow
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_RingSingleArrow
+- uid: '@altmp/altv-types.alt-server.CheckpointType.RingTripleArrow'
+  name: RingTripleArrow
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_RingTripleArrow
+- uid: '@altmp/altv-types.alt-server.CheckpointType.RingTruck'
+  name: RingTruck
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_RingTruck
+- uid: '@altmp/altv-types.alt-server.CheckpointType.RingWhirl'
+  name: RingWhirl
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_RingWhirl
+- uid: '@altmp/altv-types.alt-server.CheckpointType.RingWolf'
+  name: RingWolf
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_RingWolf
+- uid: '@altmp/altv-types.alt-server.CheckpointType.SingleArrow'
+  name: SingleArrow
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_SingleArrow
+- uid: '@altmp/altv-types.alt-server.CheckpointType.TripleArrow'
+  name: TripleArrow
+  href: api/alt-server.CheckpointType.html#_altmp_altv_types_alt_server_CheckpointType_TripleArrow
 - uid: '@altmp/altv-types.alt-server.clearEveryTick'
   name: clearEveryTick(number)
   href: api/alt-server.html#_altmp_altv_types_alt_server_clearEveryTick
@@ -1154,6 +1687,28 @@ references:
 - uid: '@altmp/altv-types.alt-server.ColshapeSphere.constructor'
   name: ColshapeSphere(number, number, number, number)
   href: api/alt-server.ColshapeSphere.html#_altmp_altv_types_alt_server_ColshapeSphere_constructor
+- uid: '@altmp/altv-types.alt-server.ColShapeType'
+  name: ColShapeType
+  href: api/alt-server.ColShapeType.html#_altmp_altv_types_alt_server_ColShapeType
+  fullName: ColShapeType
+- uid: '@altmp/altv-types.alt-server.ColShapeType.CheckpointCylinder'
+  name: CheckpointCylinder
+  href: api/alt-server.ColShapeType.html#_altmp_altv_types_alt_server_ColShapeType_CheckpointCylinder
+- uid: '@altmp/altv-types.alt-server.ColShapeType.Circle'
+  name: Circle
+  href: api/alt-server.ColShapeType.html#_altmp_altv_types_alt_server_ColShapeType_Circle
+- uid: '@altmp/altv-types.alt-server.ColShapeType.Cuboid'
+  name: Cuboid
+  href: api/alt-server.ColShapeType.html#_altmp_altv_types_alt_server_ColShapeType_Cuboid
+- uid: '@altmp/altv-types.alt-server.ColShapeType.Cylinder'
+  name: Cylinder
+  href: api/alt-server.ColShapeType.html#_altmp_altv_types_alt_server_ColShapeType_Cylinder
+- uid: '@altmp/altv-types.alt-server.ColShapeType.Rectangle'
+  name: Rectangle
+  href: api/alt-server.ColShapeType.html#_altmp_altv_types_alt_server_ColShapeType_Rectangle
+- uid: '@altmp/altv-types.alt-server.ColShapeType.Sphere'
+  name: Sphere
+  href: api/alt-server.ColShapeType.html#_altmp_altv_types_alt_server_ColShapeType_Sphere
 - uid: '@altmp/altv-types.alt-server.DateTimeDay'
   name: DateTimeDay
   href: api/alt-server.html#_altmp_altv_types_alt_server_DateTimeDay
@@ -1249,6 +1804,130 @@ references:
 - uid: '@altmp/altv-types.alt-server.everyTick'
   name: everyTick(() => void)
   href: api/alt-server.html#_altmp_altv_types_alt_server_everyTick
+- uid: '@altmp/altv-types.alt-server.ExplosionType'
+  name: ExplosionType
+  href: api/alt-server.ExplosionType.html#_altmp_altv_types_alt_server_ExplosionType
+  fullName: ExplosionType
+- uid: '@altmp/altv-types.alt-server.ExplosionType.Barrel'
+  name: Barrel
+  href: api/alt-server.ExplosionType.html#_altmp_altv_types_alt_server_ExplosionType_Barrel
+- uid: '@altmp/altv-types.alt-server.ExplosionType.Bike'
+  name: Bike
+  href: api/alt-server.ExplosionType.html#_altmp_altv_types_alt_server_ExplosionType_Bike
+- uid: '@altmp/altv-types.alt-server.ExplosionType.Blimp'
+  name: Blimp
+  href: api/alt-server.ExplosionType.html#_altmp_altv_types_alt_server_ExplosionType_Blimp
+- uid: '@altmp/altv-types.alt-server.ExplosionType.Boat'
+  name: Boat
+  href: api/alt-server.ExplosionType.html#_altmp_altv_types_alt_server_ExplosionType_Boat
+- uid: '@altmp/altv-types.alt-server.ExplosionType.Bullet'
+  name: Bullet
+  href: api/alt-server.ExplosionType.html#_altmp_altv_types_alt_server_ExplosionType_Bullet
+- uid: '@altmp/altv-types.alt-server.ExplosionType.BzGas'
+  name: BzGas
+  href: api/alt-server.ExplosionType.html#_altmp_altv_types_alt_server_ExplosionType_BzGas
+- uid: '@altmp/altv-types.alt-server.ExplosionType.Car'
+  name: Car
+  href: api/alt-server.ExplosionType.html#_altmp_altv_types_alt_server_ExplosionType_Car
+- uid: '@altmp/altv-types.alt-server.ExplosionType.DirFlame'
+  name: DirFlame
+  href: api/alt-server.ExplosionType.html#_altmp_altv_types_alt_server_ExplosionType_DirFlame
+- uid: '@altmp/altv-types.alt-server.ExplosionType.DirFlameExplode'
+  name: DirFlameExplode
+  href: api/alt-server.ExplosionType.html#_altmp_altv_types_alt_server_ExplosionType_DirFlameExplode
+- uid: '@altmp/altv-types.alt-server.ExplosionType.DirGasCanister'
+  name: DirGasCanister
+  href: api/alt-server.ExplosionType.html#_altmp_altv_types_alt_server_ExplosionType_DirGasCanister
+- uid: '@altmp/altv-types.alt-server.ExplosionType.DirSteam'
+  name: DirSteam
+  href: api/alt-server.ExplosionType.html#_altmp_altv_types_alt_server_ExplosionType_DirSteam
+- uid: '@altmp/altv-types.alt-server.ExplosionType.DirWaterHydrant'
+  name: DirWaterHydrant
+  href: api/alt-server.ExplosionType.html#_altmp_altv_types_alt_server_ExplosionType_DirWaterHydrant
+- uid: '@altmp/altv-types.alt-server.ExplosionType.Extinguisher'
+  name: Extinguisher
+  href: api/alt-server.ExplosionType.html#_altmp_altv_types_alt_server_ExplosionType_Extinguisher
+- uid: '@altmp/altv-types.alt-server.ExplosionType.Firework'
+  name: Firework
+  href: api/alt-server.ExplosionType.html#_altmp_altv_types_alt_server_ExplosionType_Firework
+- uid: '@altmp/altv-types.alt-server.ExplosionType.Flare'
+  name: Flare
+  href: api/alt-server.ExplosionType.html#_altmp_altv_types_alt_server_ExplosionType_Flare
+- uid: '@altmp/altv-types.alt-server.ExplosionType.GasCanister'
+  name: GasCanister
+  href: api/alt-server.ExplosionType.html#_altmp_altv_types_alt_server_ExplosionType_GasCanister
+- uid: '@altmp/altv-types.alt-server.ExplosionType.GasTank'
+  name: GasTank
+  href: api/alt-server.ExplosionType.html#_altmp_altv_types_alt_server_ExplosionType_GasTank
+- uid: '@altmp/altv-types.alt-server.ExplosionType.Grenade'
+  name: Grenade
+  href: api/alt-server.ExplosionType.html#_altmp_altv_types_alt_server_ExplosionType_Grenade
+- uid: '@altmp/altv-types.alt-server.ExplosionType.GrenadeLauncher'
+  name: GrenadeLauncher
+  href: api/alt-server.ExplosionType.html#_altmp_altv_types_alt_server_ExplosionType_GrenadeLauncher
+- uid: '@altmp/altv-types.alt-server.ExplosionType.HiOctane'
+  name: HiOctane
+  href: api/alt-server.ExplosionType.html#_altmp_altv_types_alt_server_ExplosionType_HiOctane
+- uid: '@altmp/altv-types.alt-server.ExplosionType.Molotov'
+  name: Molotov
+  href: api/alt-server.ExplosionType.html#_altmp_altv_types_alt_server_ExplosionType_Molotov
+- uid: '@altmp/altv-types.alt-server.ExplosionType.PetrolPump'
+  name: PetrolPump
+  href: api/alt-server.ExplosionType.html#_altmp_altv_types_alt_server_ExplosionType_PetrolPump
+- uid: '@altmp/altv-types.alt-server.ExplosionType.Plane'
+  name: Plane
+  href: api/alt-server.ExplosionType.html#_altmp_altv_types_alt_server_ExplosionType_Plane
+- uid: '@altmp/altv-types.alt-server.ExplosionType.PlaneRocket'
+  name: PlaneRocket
+  href: api/alt-server.ExplosionType.html#_altmp_altv_types_alt_server_ExplosionType_PlaneRocket
+- uid: '@altmp/altv-types.alt-server.ExplosionType.ProgrammableAr'
+  name: ProgrammableAr
+  href: api/alt-server.ExplosionType.html#_altmp_altv_types_alt_server_ExplosionType_ProgrammableAr
+- uid: '@altmp/altv-types.alt-server.ExplosionType.Propane'
+  name: Propane
+  href: api/alt-server.ExplosionType.html#_altmp_altv_types_alt_server_ExplosionType_Propane
+- uid: '@altmp/altv-types.alt-server.ExplosionType.ProxMine'
+  name: ProxMine
+  href: api/alt-server.ExplosionType.html#_altmp_altv_types_alt_server_ExplosionType_ProxMine
+- uid: '@altmp/altv-types.alt-server.ExplosionType.Rocket'
+  name: Rocket
+  href: api/alt-server.ExplosionType.html#_altmp_altv_types_alt_server_ExplosionType_Rocket
+- uid: '@altmp/altv-types.alt-server.ExplosionType.ShipDestroy'
+  name: ShipDestroy
+  href: api/alt-server.ExplosionType.html#_altmp_altv_types_alt_server_ExplosionType_ShipDestroy
+- uid: '@altmp/altv-types.alt-server.ExplosionType.SmokeGrenade'
+  name: SmokeGrenade
+  href: api/alt-server.ExplosionType.html#_altmp_altv_types_alt_server_ExplosionType_SmokeGrenade
+- uid: '@altmp/altv-types.alt-server.ExplosionType.SmokeGrenadeLauncher'
+  name: SmokeGrenadeLauncher
+  href: api/alt-server.ExplosionType.html#_altmp_altv_types_alt_server_ExplosionType_SmokeGrenadeLauncher
+- uid: '@altmp/altv-types.alt-server.ExplosionType.Snowball'
+  name: Snowball
+  href: api/alt-server.ExplosionType.html#_altmp_altv_types_alt_server_ExplosionType_Snowball
+- uid: '@altmp/altv-types.alt-server.ExplosionType.StickyBomb'
+  name: StickyBomb
+  href: api/alt-server.ExplosionType.html#_altmp_altv_types_alt_server_ExplosionType_StickyBomb
+- uid: '@altmp/altv-types.alt-server.ExplosionType.Tanker'
+  name: Tanker
+  href: api/alt-server.ExplosionType.html#_altmp_altv_types_alt_server_ExplosionType_Tanker
+- uid: '@altmp/altv-types.alt-server.ExplosionType.TankShell'
+  name: TankShell
+  href: api/alt-server.ExplosionType.html#_altmp_altv_types_alt_server_ExplosionType_TankShell
+- uid: '@altmp/altv-types.alt-server.ExplosionType.Train'
+  name: Train
+  href: api/alt-server.ExplosionType.html#_altmp_altv_types_alt_server_ExplosionType_Train
+- uid: '@altmp/altv-types.alt-server.ExplosionType.Truck'
+  name: Truck
+  href: api/alt-server.ExplosionType.html#_altmp_altv_types_alt_server_ExplosionType_Truck
+- uid: '@altmp/altv-types.alt-server.ExplosionType.Unknown'
+  name: Unknown
+  href: api/alt-server.ExplosionType.html#_altmp_altv_types_alt_server_ExplosionType_Unknown
+- uid: '@altmp/altv-types.alt-server.ExplosionType.ValkyrieCannon'
+  name: ValkyrieCannon
+  href: api/alt-server.ExplosionType.html#_altmp_altv_types_alt_server_ExplosionType_ValkyrieCannon
+- uid: '@altmp/altv-types.alt-server.ExplosionType.VehicleBullet'
+  name: VehicleBullet
+  href: api/alt-server.ExplosionType.html#_altmp_altv_types_alt_server_ExplosionType_VehicleBullet
 - uid: '@altmp/altv-types.alt-server.File'
   name: File
   href: api/alt-server.File.html#_altmp_altv_types_alt_server_File
@@ -1308,6 +1987,114 @@ references:
   name: weapon
   href: api/alt-server.IFireInfo.html#_altmp_altv_types_alt_server_IFireInfo_weapon
   fullName: weapon
+- uid: '@altmp/altv-types.alt-server.IServerEvent'
+  name: IServerEvent
+  href: api/alt-server.IServerEvent.html#_altmp_altv_types_alt_server_IServerEvent
+  fullName: IServerEvent
+- uid: '@altmp/altv-types.alt-server.IServerEvent.anyResourceError'
+  name: anyResourceError
+  href: api/alt-server.IServerEvent.html#_altmp_altv_types_alt_server_IServerEvent_anyResourceError
+  fullName: anyResourceError
+- uid: '@altmp/altv-types.alt-server.IServerEvent.anyResourceStart'
+  name: anyResourceStart
+  href: api/alt-server.IServerEvent.html#_altmp_altv_types_alt_server_IServerEvent_anyResourceStart
+  fullName: anyResourceStart
+- uid: '@altmp/altv-types.alt-server.IServerEvent.anyResourceStop'
+  name: anyResourceStop
+  href: api/alt-server.IServerEvent.html#_altmp_altv_types_alt_server_IServerEvent_anyResourceStop
+  fullName: anyResourceStop
+- uid: '@altmp/altv-types.alt-server.IServerEvent.colshapeEnter'
+  name: colshapeEnter
+  href: api/alt-server.IServerEvent.html#_altmp_altv_types_alt_server_IServerEvent_colshapeEnter
+  fullName: colshapeEnter
+- uid: '@altmp/altv-types.alt-server.IServerEvent.colshapeLeave'
+  name: colshapeLeave
+  href: api/alt-server.IServerEvent.html#_altmp_altv_types_alt_server_IServerEvent_colshapeLeave
+  fullName: colshapeLeave
+- uid: '@altmp/altv-types.alt-server.IServerEvent.consoleCommand'
+  name: consoleCommand
+  href: api/alt-server.IServerEvent.html#_altmp_altv_types_alt_server_IServerEvent_consoleCommand
+  fullName: consoleCommand
+- uid: '@altmp/altv-types.alt-server.IServerEvent.explosion'
+  name: explosion
+  href: api/alt-server.IServerEvent.html#_altmp_altv_types_alt_server_IServerEvent_explosion
+  fullName: explosion
+- uid: '@altmp/altv-types.alt-server.IServerEvent.globalMetaChange'
+  name: globalMetaChange
+  href: api/alt-server.IServerEvent.html#_altmp_altv_types_alt_server_IServerEvent_globalMetaChange
+  fullName: globalMetaChange
+- uid: '@altmp/altv-types.alt-server.IServerEvent.globalSyncedMetaChange'
+  name: globalSyncedMetaChange
+  href: api/alt-server.IServerEvent.html#_altmp_altv_types_alt_server_IServerEvent_globalSyncedMetaChange
+  fullName: globalSyncedMetaChange
+- uid: '@altmp/altv-types.alt-server.IServerEvent.playerChangeVehicleSeat'
+  name: playerChangeVehicleSeat
+  href: api/alt-server.IServerEvent.html#_altmp_altv_types_alt_server_IServerEvent_playerChangeVehicleSeat
+  fullName: playerChangeVehicleSeat
+- uid: '@altmp/altv-types.alt-server.IServerEvent.playerConnect'
+  name: playerConnect
+  href: api/alt-server.IServerEvent.html#_altmp_altv_types_alt_server_IServerEvent_playerConnect
+  fullName: playerConnect
+- uid: '@altmp/altv-types.alt-server.IServerEvent.playerDamage'
+  name: playerDamage
+  href: api/alt-server.IServerEvent.html#_altmp_altv_types_alt_server_IServerEvent_playerDamage
+  fullName: playerDamage
+- uid: '@altmp/altv-types.alt-server.IServerEvent.playerDeath'
+  name: playerDeath
+  href: api/alt-server.IServerEvent.html#_altmp_altv_types_alt_server_IServerEvent_playerDeath
+  fullName: playerDeath
+- uid: '@altmp/altv-types.alt-server.IServerEvent.playerDisconnect'
+  name: playerDisconnect
+  href: api/alt-server.IServerEvent.html#_altmp_altv_types_alt_server_IServerEvent_playerDisconnect
+  fullName: playerDisconnect
+- uid: '@altmp/altv-types.alt-server.IServerEvent.playerEnterVehicle'
+  name: playerEnterVehicle
+  href: api/alt-server.IServerEvent.html#_altmp_altv_types_alt_server_IServerEvent_playerEnterVehicle
+  fullName: playerEnterVehicle
+- uid: '@altmp/altv-types.alt-server.IServerEvent.playerLeaveVehicle'
+  name: playerLeaveVehicle
+  href: api/alt-server.IServerEvent.html#_altmp_altv_types_alt_server_IServerEvent_playerLeaveVehicle
+  fullName: playerLeaveVehicle
+- uid: '@altmp/altv-types.alt-server.IServerEvent.playerWeaponChange'
+  name: playerWeaponChange
+  href: api/alt-server.IServerEvent.html#_altmp_altv_types_alt_server_IServerEvent_playerWeaponChange
+  fullName: playerWeaponChange
+- uid: '@altmp/altv-types.alt-server.IServerEvent.removeEntity'
+  name: removeEntity
+  href: api/alt-server.IServerEvent.html#_altmp_altv_types_alt_server_IServerEvent_removeEntity
+  fullName: removeEntity
+- uid: '@altmp/altv-types.alt-server.IServerEvent.resourceStart'
+  name: resourceStart
+  href: api/alt-server.IServerEvent.html#_altmp_altv_types_alt_server_IServerEvent_resourceStart
+  fullName: resourceStart
+- uid: '@altmp/altv-types.alt-server.IServerEvent.resourceStop'
+  name: resourceStop
+  href: api/alt-server.IServerEvent.html#_altmp_altv_types_alt_server_IServerEvent_resourceStop
+  fullName: resourceStop
+- uid: '@altmp/altv-types.alt-server.IServerEvent.startFire'
+  name: startFire
+  href: api/alt-server.IServerEvent.html#_altmp_altv_types_alt_server_IServerEvent_startFire
+  fullName: startFire
+- uid: '@altmp/altv-types.alt-server.IServerEvent.startProjectile'
+  name: startProjectile
+  href: api/alt-server.IServerEvent.html#_altmp_altv_types_alt_server_IServerEvent_startProjectile
+  fullName: startProjectile
+- uid: '@altmp/altv-types.alt-server.IServerEvent.streamSyncedMetaChange'
+  name: streamSyncedMetaChange
+  href: api/alt-server.IServerEvent.html#_altmp_altv_types_alt_server_IServerEvent_streamSyncedMetaChange
+  fullName: streamSyncedMetaChange
+- uid: '@altmp/altv-types.alt-server.IServerEvent.syncedMetaChange'
+  name: syncedMetaChange
+  href: api/alt-server.IServerEvent.html#_altmp_altv_types_alt_server_IServerEvent_syncedMetaChange
+  fullName: syncedMetaChange
+- uid: '@altmp/altv-types.alt-server.IServerEvent.vehicleDestroy'
+  name: vehicleDestroy
+  href: api/alt-server.IServerEvent.html#_altmp_altv_types_alt_server_IServerEvent_vehicleDestroy
+  fullName: vehicleDestroy
+- uid: '@altmp/altv-types.alt-server.IServerEvent.weaponDamage'
+  name: weaponDamage
+  href: api/alt-server.IServerEvent.html#_altmp_altv_types_alt_server_IServerEvent_weaponDamage
+  fullName: weaponDamage
 - uid: '@altmp/altv-types.alt-server.IVector3'
   name: IVector3
   href: api/alt-server.IVector3.html#_altmp_altv_types_alt_server_IVector3
@@ -1356,6 +2143,28 @@ references:
 - uid: '@altmp/altv-types.alt-server.nextTick'
   name: nextTick(() => void)
   href: api/alt-server.html#_altmp_altv_types_alt_server_nextTick
+- uid: '@altmp/altv-types.alt-server.NumberPlateStyle'
+  name: NumberPlateStyle
+  href: api/alt-server.NumberPlateStyle.html#_altmp_altv_types_alt_server_NumberPlateStyle
+  fullName: NumberPlateStyle
+- uid: '@altmp/altv-types.alt-server.NumberPlateStyle.BlueWhite'
+  name: BlueWhite
+  href: api/alt-server.NumberPlateStyle.html#_altmp_altv_types_alt_server_NumberPlateStyle_BlueWhite
+- uid: '@altmp/altv-types.alt-server.NumberPlateStyle.BlueWhite2'
+  name: BlueWhite2
+  href: api/alt-server.NumberPlateStyle.html#_altmp_altv_types_alt_server_NumberPlateStyle_BlueWhite2
+- uid: '@altmp/altv-types.alt-server.NumberPlateStyle.BlueWhite3'
+  name: BlueWhite3
+  href: api/alt-server.NumberPlateStyle.html#_altmp_altv_types_alt_server_NumberPlateStyle_BlueWhite3
+- uid: '@altmp/altv-types.alt-server.NumberPlateStyle.Yankton'
+  name: Yankton
+  href: api/alt-server.NumberPlateStyle.html#_altmp_altv_types_alt_server_NumberPlateStyle_Yankton
+- uid: '@altmp/altv-types.alt-server.NumberPlateStyle.YellowBlack'
+  name: YellowBlack
+  href: api/alt-server.NumberPlateStyle.html#_altmp_altv_types_alt_server_NumberPlateStyle_YellowBlack
+- uid: '@altmp/altv-types.alt-server.NumberPlateStyle.YellowBlue'
+  name: YellowBlue
+  href: api/alt-server.NumberPlateStyle.html#_altmp_altv_types_alt_server_NumberPlateStyle_YellowBlue
 - uid: '@altmp/altv-types.alt-server.off'
   name: 'off(string, (...args: any[]) => void)'
   href: api/alt-server.html#_altmp_altv_types_alt_server_off
@@ -1363,89 +2172,11 @@ references:
   name: 'offClient(string, (...args: any[]) => void)'
   href: api/alt-server.html#_altmp_altv_types_alt_server_offClient
 - uid: '@altmp/altv-types.alt-server.on'
-  name: 'on(string, (...args: any[]) => void)'
+  name: on<K extends keyof IServerEvent>(K, IServerEvent[K])
   href: api/alt-server.html#_altmp_altv_types_alt_server_on
 - uid: '@altmp/altv-types.alt-server.on_1'
-  name: 'on("anyResourceError", (resourceName: string) => void)'
+  name: 'on<S extends string>(Exclude<S, keyof IServerEvent>, (...args: any[]) => boolean | void)'
   href: api/alt-server.html#_altmp_altv_types_alt_server_on_1
-- uid: '@altmp/altv-types.alt-server.on_10'
-  name: 'on("playerConnect", (player: Player) => void)'
-  href: api/alt-server.html#_altmp_altv_types_alt_server_on_10
-- uid: '@altmp/altv-types.alt-server.on_11'
-  name: 'on("playerDamage", (victim: Player, attacker: Entity, damage: number, weaponHash: number) => void)'
-  href: api/alt-server.html#_altmp_altv_types_alt_server_on_11
-- uid: '@altmp/altv-types.alt-server.on_12'
-  name: 'on("playerDeath", (victim: Player, killer: Entity, weaponHash: number) => void)'
-  href: api/alt-server.html#_altmp_altv_types_alt_server_on_12
-- uid: '@altmp/altv-types.alt-server.on_13'
-  name: 'on("playerDisconnect", (player: Player, reason: string) => void)'
-  href: api/alt-server.html#_altmp_altv_types_alt_server_on_13
-- uid: '@altmp/altv-types.alt-server.on_14'
-  name: 'on("playerEnteredVehicle", (player: Player, vehicle: Vehicle, seat: number) => void)'
-  href: api/alt-server.html#_altmp_altv_types_alt_server_on_14
-- uid: '@altmp/altv-types.alt-server.on_15'
-  name: 'on("playerLeftVehicle", (player: Player, vehicle: Vehicle, seat: number) => void)'
-  href: api/alt-server.html#_altmp_altv_types_alt_server_on_15
-- uid: '@altmp/altv-types.alt-server.on_16'
-  name: 'on("removeEntity", (object: BaseObject) => void)'
-  href: api/alt-server.html#_altmp_altv_types_alt_server_on_16
-- uid: '@altmp/altv-types.alt-server.on_17'
-  name: 'on("resourceStart", (errored: boolean) => void)'
-  href: api/alt-server.html#_altmp_altv_types_alt_server_on_17
-- uid: '@altmp/altv-types.alt-server.on_18'
-  name: on("resourceStop", () => void)
-  href: api/alt-server.html#_altmp_altv_types_alt_server_on_18
-- uid: '@altmp/altv-types.alt-server.on_19'
-  name: 'on("syncedMetaChange", (entity: Entity, key: string, value: any, oldValue: any) => void)'
-  href: api/alt-server.html#_altmp_altv_types_alt_server_on_19
-- uid: '@altmp/altv-types.alt-server.on_2'
-  name: 'on("anyResourceStart", (resourceName: string) => void)'
-  href: api/alt-server.html#_altmp_altv_types_alt_server_on_2
-- uid: '@altmp/altv-types.alt-server.on_20'
-  name: 'on("streamSyncedMetaChange", (entity: Entity, key: string, value: any, oldValue: any) => void)'
-  href: api/alt-server.html#_altmp_altv_types_alt_server_on_20
-- uid: '@altmp/altv-types.alt-server.on_21'
-  name: 'on("globalMetaChange", (key: string, value: any, oldValue: any) => void)'
-  href: api/alt-server.html#_altmp_altv_types_alt_server_on_21
-- uid: '@altmp/altv-types.alt-server.on_22'
-  name: 'on("globalSyncedMetaChange", (key: string, value: any, oldValue: any) => void)'
-  href: api/alt-server.html#_altmp_altv_types_alt_server_on_22
-- uid: '@altmp/altv-types.alt-server.on_23'
-  name: 'on("vehicleDestroy", (vehicle: Vehicle) => void)'
-  href: api/alt-server.html#_altmp_altv_types_alt_server_on_23
-- uid: '@altmp/altv-types.alt-server.on_24'
-  name: 'on("weaponDamage", (source: Entity, target: Entity, weaponHash: number, damage: number, offset: Vector3, bodyPart: number) => boolean | void)'
-  href: api/alt-server.html#_altmp_altv_types_alt_server_on_24
-- uid: '@altmp/altv-types.alt-server.on_25'
-  name: 'on("startFire", (player: Player, fires: Array<IFireInfo>) => boolean | void)'
-  href: api/alt-server.html#_altmp_altv_types_alt_server_on_25
-- uid: '@altmp/altv-types.alt-server.on_26'
-  name: 'on("startProjectile", (player: Player, pos: Vector3, dir: Vector3, ammoHash: number, weaponHash: number) => boolean | void)'
-  href: api/alt-server.html#_altmp_altv_types_alt_server_on_26
-- uid: '@altmp/altv-types.alt-server.on_27'
-  name: 'on("playerWeaponChange", (player: Player, oldWeapon: number, newWeapon: number) => void)'
-  href: api/alt-server.html#_altmp_altv_types_alt_server_on_27
-- uid: '@altmp/altv-types.alt-server.on_3'
-  name: 'on("anyResourceStop", (resourceName: string) => void)'
-  href: api/alt-server.html#_altmp_altv_types_alt_server_on_3
-- uid: '@altmp/altv-types.alt-server.on_4'
-  name: 'on("consoleCommand", (...args: string[]) => void)'
-  href: api/alt-server.html#_altmp_altv_types_alt_server_on_4
-- uid: '@altmp/altv-types.alt-server.on_5'
-  name: 'on("entityEnterColshape", (colshape: Colshape, entity: Entity) => void)'
-  href: api/alt-server.html#_altmp_altv_types_alt_server_on_5
-- uid: '@altmp/altv-types.alt-server.on_6'
-  name: 'on("entityLeaveColshape", (colshape: Colshape, entity: Entity) => void)'
-  href: api/alt-server.html#_altmp_altv_types_alt_server_on_6
-- uid: '@altmp/altv-types.alt-server.on_7'
-  name: 'on("explosion", (source: Entity, type: number, pos: Vector3, fx: number) => boolean | void)'
-  href: api/alt-server.html#_altmp_altv_types_alt_server_on_7
-- uid: '@altmp/altv-types.alt-server.on_8'
-  name: 'on("explosion", (source: Entity, type: number, pos: Vector3, fx: number, target: Entity) => boolean | void)'
-  href: api/alt-server.html#_altmp_altv_types_alt_server_on_8
-- uid: '@altmp/altv-types.alt-server.on_9'
-  name: 'on("playerChangedVehicleSeat", (player: Player, vehicle: Vehicle, oldSeat: number, newSeat: number) => void)'
-  href: api/alt-server.html#_altmp_altv_types_alt_server_on_9
 - uid: '@altmp/altv-types.alt-server.onClient'
   name: 'onClient(string, (player: Player, ...args: any[]) => void)'
   href: api/alt-server.html#_altmp_altv_types_alt_server_onClient
@@ -1553,7 +2284,7 @@ references:
   name: setWeaponTintIndex(number, number)
   href: api/alt-server.Player.html#_altmp_altv_types_alt_server_Player_setWeaponTintIndex
 - uid: '@altmp/altv-types.alt-server.Player.setWeather'
-  name: setWeather(number)
+  name: setWeather(WeatherType)
   href: api/alt-server.Player.html#_altmp_altv_types_alt_server_Player_setWeather
 - uid: '@altmp/altv-types.alt-server.Player.socialId'
   name: socialId
@@ -1571,8 +2302,72 @@ references:
   href: api/alt-server.PointBlip.html#_altmp_altv_types_alt_server_PointBlip
   fullName: PointBlip
 - uid: '@altmp/altv-types.alt-server.PointBlip.constructor'
-  name: PointBlip(number, number, number, number)
+  name: PointBlip(BlipType, number, number, number)
   href: api/alt-server.PointBlip.html#_altmp_altv_types_alt_server_PointBlip_constructor
+- uid: '@altmp/altv-types.alt-server.RadioStation'
+  name: RadioStation
+  href: api/alt-server.RadioStation.html#_altmp_altv_types_alt_server_RadioStation
+  fullName: RadioStation
+- uid: '@altmp/altv-types.alt-server.RadioStation.BlaineCountyRadio'
+  name: BlaineCountyRadio
+  href: api/alt-server.RadioStation.html#_altmp_altv_types_alt_server_RadioStation_BlaineCountyRadio
+- uid: '@altmp/altv-types.alt-server.RadioStation.ChannelX'
+  name: ChannelX
+  href: api/alt-server.RadioStation.html#_altmp_altv_types_alt_server_RadioStation_ChannelX
+- uid: '@altmp/altv-types.alt-server.RadioStation.EastLosFm'
+  name: EastLosFm
+  href: api/alt-server.RadioStation.html#_altmp_altv_types_alt_server_RadioStation_EastLosFm
+- uid: '@altmp/altv-types.alt-server.RadioStation.FlyloFm'
+  name: FlyloFm
+  href: api/alt-server.RadioStation.html#_altmp_altv_types_alt_server_RadioStation_FlyloFm
+- uid: '@altmp/altv-types.alt-server.RadioStation.LosSantosRockRadio'
+  name: LosSantosRockRadio
+  href: api/alt-server.RadioStation.html#_altmp_altv_types_alt_server_RadioStation_LosSantosRockRadio
+- uid: '@altmp/altv-types.alt-server.RadioStation.NonStopPopFm'
+  name: NonStopPopFm
+  href: api/alt-server.RadioStation.html#_altmp_altv_types_alt_server_RadioStation_NonStopPopFm
+- uid: '@altmp/altv-types.alt-server.RadioStation.RadioLosSantos'
+  name: RadioLosSantos
+  href: api/alt-server.RadioStation.html#_altmp_altv_types_alt_server_RadioStation_RadioLosSantos
+- uid: '@altmp/altv-types.alt-server.RadioStation.RadioMirrorPark'
+  name: RadioMirrorPark
+  href: api/alt-server.RadioStation.html#_altmp_altv_types_alt_server_RadioStation_RadioMirrorPark
+- uid: '@altmp/altv-types.alt-server.RadioStation.RadioOff'
+  name: RadioOff
+  href: api/alt-server.RadioStation.html#_altmp_altv_types_alt_server_RadioStation_RadioOff
+- uid: '@altmp/altv-types.alt-server.RadioStation.RebelRadio'
+  name: RebelRadio
+  href: api/alt-server.RadioStation.html#_altmp_altv_types_alt_server_RadioStation_RebelRadio
+- uid: '@altmp/altv-types.alt-server.RadioStation.SelfRadio'
+  name: SelfRadio
+  href: api/alt-server.RadioStation.html#_altmp_altv_types_alt_server_RadioStation_SelfRadio
+- uid: '@altmp/altv-types.alt-server.RadioStation.SoulwaxFm'
+  name: SoulwaxFm
+  href: api/alt-server.RadioStation.html#_altmp_altv_types_alt_server_RadioStation_SoulwaxFm
+- uid: '@altmp/altv-types.alt-server.RadioStation.Space'
+  name: Space
+  href: api/alt-server.RadioStation.html#_altmp_altv_types_alt_server_RadioStation_Space
+- uid: '@altmp/altv-types.alt-server.RadioStation.TheBlueArk'
+  name: TheBlueArk
+  href: api/alt-server.RadioStation.html#_altmp_altv_types_alt_server_RadioStation_TheBlueArk
+- uid: '@altmp/altv-types.alt-server.RadioStation.TheLab'
+  name: TheLab
+  href: api/alt-server.RadioStation.html#_altmp_altv_types_alt_server_RadioStation_TheLab
+- uid: '@altmp/altv-types.alt-server.RadioStation.TheLowdown'
+  name: TheLowdown
+  href: api/alt-server.RadioStation.html#_altmp_altv_types_alt_server_RadioStation_TheLowdown
+- uid: '@altmp/altv-types.alt-server.RadioStation.VinewoodBoulevardRadio'
+  name: VinewoodBoulevardRadio
+  href: api/alt-server.RadioStation.html#_altmp_altv_types_alt_server_RadioStation_VinewoodBoulevardRadio
+- uid: '@altmp/altv-types.alt-server.RadioStation.WestCoastClassics'
+  name: WestCoastClassics
+  href: api/alt-server.RadioStation.html#_altmp_altv_types_alt_server_RadioStation_WestCoastClassics
+- uid: '@altmp/altv-types.alt-server.RadioStation.WestCoastTalkRadio'
+  name: WestCoastTalkRadio
+  href: api/alt-server.RadioStation.html#_altmp_altv_types_alt_server_RadioStation_WestCoastTalkRadio
+- uid: '@altmp/altv-types.alt-server.RadioStation.WorldWideFm'
+  name: WorldWideFm
+  href: api/alt-server.RadioStation.html#_altmp_altv_types_alt_server_RadioStation_WorldWideFm
 - uid: '@altmp/altv-types.alt-server.resourceName'
   name: resourceName
   href: api/alt-server.html#_altmp_altv_types_alt_server_resourceName
@@ -1738,7 +2533,7 @@ references:
   name: getArmoredWindowShootCount(number)
   href: api/alt-server.Vehicle.html#_altmp_altv_types_alt_server_Vehicle_getArmoredWindowShootCount
 - uid: '@altmp/altv-types.alt-server.Vehicle.getBumperDamageLevel'
-  name: getBumperDamageLevel(number)
+  name: getBumperDamageLevel(VehicleBumper)
   href: api/alt-server.Vehicle.html#_altmp_altv_types_alt_server_Vehicle_getBumperDamageLevel
 - uid: '@altmp/altv-types.alt-server.Vehicle.getByID'
   name: getByID(number)
@@ -1747,7 +2542,7 @@ references:
   name: getDamageStatusBase64()
   href: api/alt-server.Vehicle.html#_altmp_altv_types_alt_server_Vehicle_getDamageStatusBase64
 - uid: '@altmp/altv-types.alt-server.Vehicle.getDoorState'
-  name: getDoorState(number)
+  name: getDoorState(VehicleDoor)
   href: api/alt-server.Vehicle.html#_altmp_altv_types_alt_server_Vehicle_getDoorState
 - uid: '@altmp/altv-types.alt-server.Vehicle.getExtra'
   name: getExtra(number)
@@ -1759,16 +2554,16 @@ references:
   name: getHealthDataBase64()
   href: api/alt-server.Vehicle.html#_altmp_altv_types_alt_server_Vehicle_getHealthDataBase64
 - uid: '@altmp/altv-types.alt-server.Vehicle.getMod'
-  name: getMod(number)
+  name: getMod(VehicleModType)
   href: api/alt-server.Vehicle.html#_altmp_altv_types_alt_server_Vehicle_getMod
 - uid: '@altmp/altv-types.alt-server.Vehicle.getModsCount'
-  name: getModsCount(number)
+  name: getModsCount(VehicleModType)
   href: api/alt-server.Vehicle.html#_altmp_altv_types_alt_server_Vehicle_getModsCount
 - uid: '@altmp/altv-types.alt-server.Vehicle.getPartBulletHoles'
-  name: getPartBulletHoles(number)
+  name: getPartBulletHoles(VehiclePart)
   href: api/alt-server.Vehicle.html#_altmp_altv_types_alt_server_Vehicle_getPartBulletHoles
 - uid: '@altmp/altv-types.alt-server.Vehicle.getPartDamageLevel'
-  name: getPartDamageLevel(number)
+  name: getPartDamageLevel(VehiclePart)
   href: api/alt-server.Vehicle.html#_altmp_altv_types_alt_server_Vehicle_getPartDamageLevel
 - uid: '@altmp/altv-types.alt-server.Vehicle.getScriptDataBase64'
   name: getScriptDataBase64()
@@ -1881,10 +2676,10 @@ references:
   name: roofLivery
   href: api/alt-server.Vehicle.html#_altmp_altv_types_alt_server_Vehicle_roofLivery
   fullName: roofLivery
-- uid: '@altmp/altv-types.alt-server.Vehicle.roofOpened'
-  name: roofOpened
-  href: api/alt-server.Vehicle.html#_altmp_altv_types_alt_server_Vehicle_roofOpened
-  fullName: roofOpened
+- uid: '@altmp/altv-types.alt-server.Vehicle.roofState'
+  name: roofState
+  href: api/alt-server.Vehicle.html#_altmp_altv_types_alt_server_Vehicle_roofState
+  fullName: roofState
 - uid: '@altmp/altv-types.alt-server.Vehicle.secondaryColor'
   name: secondaryColor
   href: api/alt-server.Vehicle.html#_altmp_altv_types_alt_server_Vehicle_secondaryColor
@@ -1899,13 +2694,13 @@ references:
   name: setArmoredWindowShootCount(number, number)
   href: api/alt-server.Vehicle.html#_altmp_altv_types_alt_server_Vehicle_setArmoredWindowShootCount
 - uid: '@altmp/altv-types.alt-server.Vehicle.setBumperDamageLevel'
-  name: setBumperDamageLevel(number, number)
+  name: setBumperDamageLevel(VehicleBumper, VehicleBumperDamage)
   href: api/alt-server.Vehicle.html#_altmp_altv_types_alt_server_Vehicle_setBumperDamageLevel
 - uid: '@altmp/altv-types.alt-server.Vehicle.setDamageStatusBase64'
   name: setDamageStatusBase64(string)
   href: api/alt-server.Vehicle.html#_altmp_altv_types_alt_server_Vehicle_setDamageStatusBase64
 - uid: '@altmp/altv-types.alt-server.Vehicle.setDoorState'
-  name: setDoorState(number, number)
+  name: setDoorState(VehicleDoor, VehicleDoorState)
   href: api/alt-server.Vehicle.html#_altmp_altv_types_alt_server_Vehicle_setDoorState
 - uid: '@altmp/altv-types.alt-server.Vehicle.setExtra'
   name: setExtra(number, boolean)
@@ -1920,13 +2715,13 @@ references:
   name: setLightDamaged(number, boolean)
   href: api/alt-server.Vehicle.html#_altmp_altv_types_alt_server_Vehicle_setLightDamaged
 - uid: '@altmp/altv-types.alt-server.Vehicle.setMod'
-  name: setMod(number, number)
+  name: setMod(VehicleModType, number)
   href: api/alt-server.Vehicle.html#_altmp_altv_types_alt_server_Vehicle_setMod
 - uid: '@altmp/altv-types.alt-server.Vehicle.setPartBulletHoles'
-  name: setPartBulletHoles(number, number)
+  name: setPartBulletHoles(VehiclePart, number)
   href: api/alt-server.Vehicle.html#_altmp_altv_types_alt_server_Vehicle_setPartBulletHoles
 - uid: '@altmp/altv-types.alt-server.Vehicle.setPartDamageLevel'
-  name: setPartDamageLevel(number, number)
+  name: setPartDamageLevel(VehiclePart, VehiclePartDamage)
   href: api/alt-server.Vehicle.html#_altmp_altv_types_alt_server_Vehicle_setPartDamageLevel
 - uid: '@altmp/altv-types.alt-server.Vehicle.setRearWheels'
   name: setRearWheels(number)
@@ -1985,6 +2780,299 @@ references:
   name: windowTint
   href: api/alt-server.Vehicle.html#_altmp_altv_types_alt_server_Vehicle_windowTint
   fullName: windowTint
+- uid: '@altmp/altv-types.alt-server.VehicleBumper'
+  name: VehicleBumper
+  href: api/alt-server.VehicleBumper.html#_altmp_altv_types_alt_server_VehicleBumper
+  fullName: VehicleBumper
+- uid: '@altmp/altv-types.alt-server.VehicleBumper.Front'
+  name: Front
+  href: api/alt-server.VehicleBumper.html#_altmp_altv_types_alt_server_VehicleBumper_Front
+- uid: '@altmp/altv-types.alt-server.VehicleBumper.Rear'
+  name: Rear
+  href: api/alt-server.VehicleBumper.html#_altmp_altv_types_alt_server_VehicleBumper_Rear
+- uid: '@altmp/altv-types.alt-server.VehicleBumperDamage'
+  name: VehicleBumperDamage
+  href: api/alt-server.VehicleBumperDamage.html#_altmp_altv_types_alt_server_VehicleBumperDamage
+  fullName: VehicleBumperDamage
+- uid: '@altmp/altv-types.alt-server.VehicleBumperDamage.Damaged'
+  name: Damaged
+  href: api/alt-server.VehicleBumperDamage.html#_altmp_altv_types_alt_server_VehicleBumperDamage_Damaged
+- uid: '@altmp/altv-types.alt-server.VehicleBumperDamage.None'
+  name: None
+  href: api/alt-server.VehicleBumperDamage.html#_altmp_altv_types_alt_server_VehicleBumperDamage_None
+- uid: '@altmp/altv-types.alt-server.VehicleBumperDamage.NotDamaged'
+  name: NotDamaged
+  href: api/alt-server.VehicleBumperDamage.html#_altmp_altv_types_alt_server_VehicleBumperDamage_NotDamaged
+- uid: '@altmp/altv-types.alt-server.VehicleDoor'
+  name: VehicleDoor
+  href: api/alt-server.VehicleDoor.html#_altmp_altv_types_alt_server_VehicleDoor
+  fullName: VehicleDoor
+- uid: '@altmp/altv-types.alt-server.VehicleDoor.DriverFront'
+  name: DriverFront
+  href: api/alt-server.VehicleDoor.html#_altmp_altv_types_alt_server_VehicleDoor_DriverFront
+- uid: '@altmp/altv-types.alt-server.VehicleDoor.DriverRear'
+  name: DriverRear
+  href: api/alt-server.VehicleDoor.html#_altmp_altv_types_alt_server_VehicleDoor_DriverRear
+- uid: '@altmp/altv-types.alt-server.VehicleDoor.Hood'
+  name: Hood
+  href: api/alt-server.VehicleDoor.html#_altmp_altv_types_alt_server_VehicleDoor_Hood
+- uid: '@altmp/altv-types.alt-server.VehicleDoor.PassengerFront'
+  name: PassengerFront
+  href: api/alt-server.VehicleDoor.html#_altmp_altv_types_alt_server_VehicleDoor_PassengerFront
+- uid: '@altmp/altv-types.alt-server.VehicleDoor.PassengerRear'
+  name: PassengerRear
+  href: api/alt-server.VehicleDoor.html#_altmp_altv_types_alt_server_VehicleDoor_PassengerRear
+- uid: '@altmp/altv-types.alt-server.VehicleDoor.Trunk'
+  name: Trunk
+  href: api/alt-server.VehicleDoor.html#_altmp_altv_types_alt_server_VehicleDoor_Trunk
+- uid: '@altmp/altv-types.alt-server.VehicleDoorState'
+  name: VehicleDoorState
+  href: api/alt-server.VehicleDoorState.html#_altmp_altv_types_alt_server_VehicleDoorState
+  fullName: VehicleDoorState
+- uid: '@altmp/altv-types.alt-server.VehicleDoorState.Closed'
+  name: Closed
+  href: api/alt-server.VehicleDoorState.html#_altmp_altv_types_alt_server_VehicleDoorState_Closed
+- uid: '@altmp/altv-types.alt-server.VehicleDoorState.OpenedLevel1'
+  name: OpenedLevel1
+  href: api/alt-server.VehicleDoorState.html#_altmp_altv_types_alt_server_VehicleDoorState_OpenedLevel1
+- uid: '@altmp/altv-types.alt-server.VehicleDoorState.OpenedLevel2'
+  name: OpenedLevel2
+  href: api/alt-server.VehicleDoorState.html#_altmp_altv_types_alt_server_VehicleDoorState_OpenedLevel2
+- uid: '@altmp/altv-types.alt-server.VehicleDoorState.OpenedLevel3'
+  name: OpenedLevel3
+  href: api/alt-server.VehicleDoorState.html#_altmp_altv_types_alt_server_VehicleDoorState_OpenedLevel3
+- uid: '@altmp/altv-types.alt-server.VehicleDoorState.OpenedLevel4'
+  name: OpenedLevel4
+  href: api/alt-server.VehicleDoorState.html#_altmp_altv_types_alt_server_VehicleDoorState_OpenedLevel4
+- uid: '@altmp/altv-types.alt-server.VehicleDoorState.OpenedLevel5'
+  name: OpenedLevel5
+  href: api/alt-server.VehicleDoorState.html#_altmp_altv_types_alt_server_VehicleDoorState_OpenedLevel5
+- uid: '@altmp/altv-types.alt-server.VehicleDoorState.OpenedLevel6'
+  name: OpenedLevel6
+  href: api/alt-server.VehicleDoorState.html#_altmp_altv_types_alt_server_VehicleDoorState_OpenedLevel6
+- uid: '@altmp/altv-types.alt-server.VehicleDoorState.OpenedLevel7'
+  name: OpenedLevel7
+  href: api/alt-server.VehicleDoorState.html#_altmp_altv_types_alt_server_VehicleDoorState_OpenedLevel7
+- uid: '@altmp/altv-types.alt-server.VehicleDoorState.Unknown'
+  name: Unknown
+  href: api/alt-server.VehicleDoorState.html#_altmp_altv_types_alt_server_VehicleDoorState_Unknown
+- uid: '@altmp/altv-types.alt-server.VehicleLockState'
+  name: VehicleLockState
+  href: api/alt-server.VehicleLockState.html#_altmp_altv_types_alt_server_VehicleLockState
+  fullName: VehicleLockState
+- uid: '@altmp/altv-types.alt-server.VehicleLockState.ForceDoorsShut'
+  name: ForceDoorsShut
+  href: api/alt-server.VehicleLockState.html#_altmp_altv_types_alt_server_VehicleLockState_ForceDoorsShut
+- uid: '@altmp/altv-types.alt-server.VehicleLockState.InitiallyLocked'
+  name: InitiallyLocked
+  href: api/alt-server.VehicleLockState.html#_altmp_altv_types_alt_server_VehicleLockState_InitiallyLocked
+- uid: '@altmp/altv-types.alt-server.VehicleLockState.Locked'
+  name: Locked
+  href: api/alt-server.VehicleLockState.html#_altmp_altv_types_alt_server_VehicleLockState_Locked
+- uid: '@altmp/altv-types.alt-server.VehicleLockState.LockedCanBeDamaged'
+  name: LockedCanBeDamaged
+  href: api/alt-server.VehicleLockState.html#_altmp_altv_types_alt_server_VehicleLockState_LockedCanBeDamaged
+- uid: '@altmp/altv-types.alt-server.VehicleLockState.LockoutPlayerOnly'
+  name: LockoutPlayerOnly
+  href: api/alt-server.VehicleLockState.html#_altmp_altv_types_alt_server_VehicleLockState_LockoutPlayerOnly
+- uid: '@altmp/altv-types.alt-server.VehicleLockState.LockPlayerInside'
+  name: LockPlayerInside
+  href: api/alt-server.VehicleLockState.html#_altmp_altv_types_alt_server_VehicleLockState_LockPlayerInside
+- uid: '@altmp/altv-types.alt-server.VehicleLockState.None'
+  name: None
+  href: api/alt-server.VehicleLockState.html#_altmp_altv_types_alt_server_VehicleLockState_None
+- uid: '@altmp/altv-types.alt-server.VehicleLockState.Unlocked'
+  name: Unlocked
+  href: api/alt-server.VehicleLockState.html#_altmp_altv_types_alt_server_VehicleLockState_Unlocked
+- uid: '@altmp/altv-types.alt-server.VehicleModType'
+  name: VehicleModType
+  href: api/alt-server.VehicleModType.html#_altmp_altv_types_alt_server_VehicleModType
+  fullName: VehicleModType
+- uid: '@altmp/altv-types.alt-server.VehicleModType.Aerials'
+  name: Aerials
+  href: api/alt-server.VehicleModType.html#_altmp_altv_types_alt_server_VehicleModType_Aerials
+- uid: '@altmp/altv-types.alt-server.VehicleModType.AirFilter'
+  name: AirFilter
+  href: api/alt-server.VehicleModType.html#_altmp_altv_types_alt_server_VehicleModType_AirFilter
+- uid: '@altmp/altv-types.alt-server.VehicleModType.ArchCover'
+  name: ArchCover
+  href: api/alt-server.VehicleModType.html#_altmp_altv_types_alt_server_VehicleModType_ArchCover
+- uid: '@altmp/altv-types.alt-server.VehicleModType.Armor'
+  name: Armor
+  href: api/alt-server.VehicleModType.html#_altmp_altv_types_alt_server_VehicleModType_Armor
+- uid: '@altmp/altv-types.alt-server.VehicleModType.BackWheels'
+  name: BackWheels
+  href: api/alt-server.VehicleModType.html#_altmp_altv_types_alt_server_VehicleModType_BackWheels
+- uid: '@altmp/altv-types.alt-server.VehicleModType.Brakes'
+  name: Brakes
+  href: api/alt-server.VehicleModType.html#_altmp_altv_types_alt_server_VehicleModType_Brakes
+- uid: '@altmp/altv-types.alt-server.VehicleModType.ColumnShifterLeavers'
+  name: ColumnShifterLeavers
+  href: api/alt-server.VehicleModType.html#_altmp_altv_types_alt_server_VehicleModType_ColumnShifterLeavers
+- uid: '@altmp/altv-types.alt-server.VehicleModType.Dashboard'
+  name: Dashboard
+  href: api/alt-server.VehicleModType.html#_altmp_altv_types_alt_server_VehicleModType_Dashboard
+- uid: '@altmp/altv-types.alt-server.VehicleModType.Dial'
+  name: Dial
+  href: api/alt-server.VehicleModType.html#_altmp_altv_types_alt_server_VehicleModType_Dial
+- uid: '@altmp/altv-types.alt-server.VehicleModType.DoorSpeaker'
+  name: DoorSpeaker
+  href: api/alt-server.VehicleModType.html#_altmp_altv_types_alt_server_VehicleModType_DoorSpeaker
+- uid: '@altmp/altv-types.alt-server.VehicleModType.Engine'
+  name: Engine
+  href: api/alt-server.VehicleModType.html#_altmp_altv_types_alt_server_VehicleModType_Engine
+- uid: '@altmp/altv-types.alt-server.VehicleModType.EngineBlock'
+  name: EngineBlock
+  href: api/alt-server.VehicleModType.html#_altmp_altv_types_alt_server_VehicleModType_EngineBlock
+- uid: '@altmp/altv-types.alt-server.VehicleModType.Exhaust'
+  name: Exhaust
+  href: api/alt-server.VehicleModType.html#_altmp_altv_types_alt_server_VehicleModType_Exhaust
+- uid: '@altmp/altv-types.alt-server.VehicleModType.Fender'
+  name: Fender
+  href: api/alt-server.VehicleModType.html#_altmp_altv_types_alt_server_VehicleModType_Fender
+- uid: '@altmp/altv-types.alt-server.VehicleModType.Frame'
+  name: Frame
+  href: api/alt-server.VehicleModType.html#_altmp_altv_types_alt_server_VehicleModType_Frame
+- uid: '@altmp/altv-types.alt-server.VehicleModType.FrontBumper'
+  name: FrontBumper
+  href: api/alt-server.VehicleModType.html#_altmp_altv_types_alt_server_VehicleModType_FrontBumper
+- uid: '@altmp/altv-types.alt-server.VehicleModType.FrontWheels'
+  name: FrontWheels
+  href: api/alt-server.VehicleModType.html#_altmp_altv_types_alt_server_VehicleModType_FrontWheels
+- uid: '@altmp/altv-types.alt-server.VehicleModType.Grille'
+  name: Grille
+  href: api/alt-server.VehicleModType.html#_altmp_altv_types_alt_server_VehicleModType_Grille
+- uid: '@altmp/altv-types.alt-server.VehicleModType.Hood'
+  name: Hood
+  href: api/alt-server.VehicleModType.html#_altmp_altv_types_alt_server_VehicleModType_Hood
+- uid: '@altmp/altv-types.alt-server.VehicleModType.Horn'
+  name: Horn
+  href: api/alt-server.VehicleModType.html#_altmp_altv_types_alt_server_VehicleModType_Horn
+- uid: '@altmp/altv-types.alt-server.VehicleModType.Hydraulics'
+  name: Hydraulics
+  href: api/alt-server.VehicleModType.html#_altmp_altv_types_alt_server_VehicleModType_Hydraulics
+- uid: '@altmp/altv-types.alt-server.VehicleModType.Livery'
+  name: Livery
+  href: api/alt-server.VehicleModType.html#_altmp_altv_types_alt_server_VehicleModType_Livery
+- uid: '@altmp/altv-types.alt-server.VehicleModType.Ornaments'
+  name: Ornaments
+  href: api/alt-server.VehicleModType.html#_altmp_altv_types_alt_server_VehicleModType_Ornaments
+- uid: '@altmp/altv-types.alt-server.VehicleModType.Plaques'
+  name: Plaques
+  href: api/alt-server.VehicleModType.html#_altmp_altv_types_alt_server_VehicleModType_Plaques
+- uid: '@altmp/altv-types.alt-server.VehicleModType.Plateholder'
+  name: Plateholder
+  href: api/alt-server.VehicleModType.html#_altmp_altv_types_alt_server_VehicleModType_Plateholder
+- uid: '@altmp/altv-types.alt-server.VehicleModType.RearBumper'
+  name: RearBumper
+  href: api/alt-server.VehicleModType.html#_altmp_altv_types_alt_server_VehicleModType_RearBumper
+- uid: '@altmp/altv-types.alt-server.VehicleModType.RightFender'
+  name: RightFender
+  href: api/alt-server.VehicleModType.html#_altmp_altv_types_alt_server_VehicleModType_RightFender
+- uid: '@altmp/altv-types.alt-server.VehicleModType.Roof'
+  name: Roof
+  href: api/alt-server.VehicleModType.html#_altmp_altv_types_alt_server_VehicleModType_Roof
+- uid: '@altmp/altv-types.alt-server.VehicleModType.Seats'
+  name: Seats
+  href: api/alt-server.VehicleModType.html#_altmp_altv_types_alt_server_VehicleModType_Seats
+- uid: '@altmp/altv-types.alt-server.VehicleModType.SideSkirt'
+  name: SideSkirt
+  href: api/alt-server.VehicleModType.html#_altmp_altv_types_alt_server_VehicleModType_SideSkirt
+- uid: '@altmp/altv-types.alt-server.VehicleModType.Speakers'
+  name: Speakers
+  href: api/alt-server.VehicleModType.html#_altmp_altv_types_alt_server_VehicleModType_Speakers
+- uid: '@altmp/altv-types.alt-server.VehicleModType.Spoiler'
+  name: Spoiler
+  href: api/alt-server.VehicleModType.html#_altmp_altv_types_alt_server_VehicleModType_Spoiler
+- uid: '@altmp/altv-types.alt-server.VehicleModType.SteeringWheel'
+  name: SteeringWheel
+  href: api/alt-server.VehicleModType.html#_altmp_altv_types_alt_server_VehicleModType_SteeringWheel
+- uid: '@altmp/altv-types.alt-server.VehicleModType.Struts'
+  name: Struts
+  href: api/alt-server.VehicleModType.html#_altmp_altv_types_alt_server_VehicleModType_Struts
+- uid: '@altmp/altv-types.alt-server.VehicleModType.Suspension'
+  name: Suspension
+  href: api/alt-server.VehicleModType.html#_altmp_altv_types_alt_server_VehicleModType_Suspension
+- uid: '@altmp/altv-types.alt-server.VehicleModType.Tank'
+  name: Tank
+  href: api/alt-server.VehicleModType.html#_altmp_altv_types_alt_server_VehicleModType_Tank
+- uid: '@altmp/altv-types.alt-server.VehicleModType.TireSmoke'
+  name: TireSmoke
+  href: api/alt-server.VehicleModType.html#_altmp_altv_types_alt_server_VehicleModType_TireSmoke
+- uid: '@altmp/altv-types.alt-server.VehicleModType.Transmission'
+  name: Transmission
+  href: api/alt-server.VehicleModType.html#_altmp_altv_types_alt_server_VehicleModType_Transmission
+- uid: '@altmp/altv-types.alt-server.VehicleModType.Trim'
+  name: Trim
+  href: api/alt-server.VehicleModType.html#_altmp_altv_types_alt_server_VehicleModType_Trim
+- uid: '@altmp/altv-types.alt-server.VehicleModType.TrimDesign'
+  name: TrimDesign
+  href: api/alt-server.VehicleModType.html#_altmp_altv_types_alt_server_VehicleModType_TrimDesign
+- uid: '@altmp/altv-types.alt-server.VehicleModType.Trunk'
+  name: Trunk
+  href: api/alt-server.VehicleModType.html#_altmp_altv_types_alt_server_VehicleModType_Trunk
+- uid: '@altmp/altv-types.alt-server.VehicleModType.Turbo'
+  name: Turbo
+  href: api/alt-server.VehicleModType.html#_altmp_altv_types_alt_server_VehicleModType_Turbo
+- uid: '@altmp/altv-types.alt-server.VehicleModType.Unk1'
+  name: Unk1
+  href: api/alt-server.VehicleModType.html#_altmp_altv_types_alt_server_VehicleModType_Unk1
+- uid: '@altmp/altv-types.alt-server.VehicleModType.Unk2'
+  name: Unk2
+  href: api/alt-server.VehicleModType.html#_altmp_altv_types_alt_server_VehicleModType_Unk2
+- uid: '@altmp/altv-types.alt-server.VehicleModType.Unk3'
+  name: Unk3
+  href: api/alt-server.VehicleModType.html#_altmp_altv_types_alt_server_VehicleModType_Unk3
+- uid: '@altmp/altv-types.alt-server.VehicleModType.Unk4'
+  name: Unk4
+  href: api/alt-server.VehicleModType.html#_altmp_altv_types_alt_server_VehicleModType_Unk4
+- uid: '@altmp/altv-types.alt-server.VehicleModType.VanityPlates'
+  name: VanityPlates
+  href: api/alt-server.VehicleModType.html#_altmp_altv_types_alt_server_VehicleModType_VanityPlates
+- uid: '@altmp/altv-types.alt-server.VehicleModType.Windows'
+  name: Windows
+  href: api/alt-server.VehicleModType.html#_altmp_altv_types_alt_server_VehicleModType_Windows
+- uid: '@altmp/altv-types.alt-server.VehicleModType.XenonLights'
+  name: XenonLights
+  href: api/alt-server.VehicleModType.html#_altmp_altv_types_alt_server_VehicleModType_XenonLights
+- uid: '@altmp/altv-types.alt-server.VehiclePart'
+  name: VehiclePart
+  href: api/alt-server.VehiclePart.html#_altmp_altv_types_alt_server_VehiclePart
+  fullName: VehiclePart
+- uid: '@altmp/altv-types.alt-server.VehiclePart.FrontLeft'
+  name: FrontLeft
+  href: api/alt-server.VehiclePart.html#_altmp_altv_types_alt_server_VehiclePart_FrontLeft
+- uid: '@altmp/altv-types.alt-server.VehiclePart.FrontRight'
+  name: FrontRight
+  href: api/alt-server.VehiclePart.html#_altmp_altv_types_alt_server_VehiclePart_FrontRight
+- uid: '@altmp/altv-types.alt-server.VehiclePart.MiddleLeft'
+  name: MiddleLeft
+  href: api/alt-server.VehiclePart.html#_altmp_altv_types_alt_server_VehiclePart_MiddleLeft
+- uid: '@altmp/altv-types.alt-server.VehiclePart.MiddleRight'
+  name: MiddleRight
+  href: api/alt-server.VehiclePart.html#_altmp_altv_types_alt_server_VehiclePart_MiddleRight
+- uid: '@altmp/altv-types.alt-server.VehiclePart.RearLeft'
+  name: RearLeft
+  href: api/alt-server.VehiclePart.html#_altmp_altv_types_alt_server_VehiclePart_RearLeft
+- uid: '@altmp/altv-types.alt-server.VehiclePart.RearRight'
+  name: RearRight
+  href: api/alt-server.VehiclePart.html#_altmp_altv_types_alt_server_VehiclePart_RearRight
+- uid: '@altmp/altv-types.alt-server.VehiclePartDamage'
+  name: VehiclePartDamage
+  href: api/alt-server.VehiclePartDamage.html#_altmp_altv_types_alt_server_VehiclePartDamage
+  fullName: VehiclePartDamage
+- uid: '@altmp/altv-types.alt-server.VehiclePartDamage.DamagedLevel1'
+  name: DamagedLevel1
+  href: api/alt-server.VehiclePartDamage.html#_altmp_altv_types_alt_server_VehiclePartDamage_DamagedLevel1
+- uid: '@altmp/altv-types.alt-server.VehiclePartDamage.DamagedLevel2'
+  name: DamagedLevel2
+  href: api/alt-server.VehiclePartDamage.html#_altmp_altv_types_alt_server_VehiclePartDamage_DamagedLevel2
+- uid: '@altmp/altv-types.alt-server.VehiclePartDamage.DamagedLevel3'
+  name: DamagedLevel3
+  href: api/alt-server.VehiclePartDamage.html#_altmp_altv_types_alt_server_VehiclePartDamage_DamagedLevel3
+- uid: '@altmp/altv-types.alt-server.VehiclePartDamage.NotDamaged'
+  name: NotDamaged
+  href: api/alt-server.VehiclePartDamage.html#_altmp_altv_types_alt_server_VehiclePartDamage_NotDamaged
 - uid: '@altmp/altv-types.alt-server.VoiceChannel'
   name: VoiceChannel
   href: api/alt-server.VoiceChannel.html#_altmp_altv_types_alt_server_VoiceChannel
@@ -2010,6 +3098,80 @@ references:
 - uid: '@altmp/altv-types.alt-server.VoiceChannel.unmutePlayer'
   name: unmutePlayer(Player)
   href: api/alt-server.VoiceChannel.html#_altmp_altv_types_alt_server_VoiceChannel_unmutePlayer
+- uid: '@altmp/altv-types.alt-server.WeatherType'
+  name: WeatherType
+  href: api/alt-server.WeatherType.html#_altmp_altv_types_alt_server_WeatherType
+  fullName: WeatherType
+- uid: '@altmp/altv-types.alt-server.WeatherType.Blizzard'
+  name: Blizzard
+  href: api/alt-server.WeatherType.html#_altmp_altv_types_alt_server_WeatherType_Blizzard
+- uid: '@altmp/altv-types.alt-server.WeatherType.Clear'
+  name: Clear
+  href: api/alt-server.WeatherType.html#_altmp_altv_types_alt_server_WeatherType_Clear
+- uid: '@altmp/altv-types.alt-server.WeatherType.Clearing'
+  name: Clearing
+  href: api/alt-server.WeatherType.html#_altmp_altv_types_alt_server_WeatherType_Clearing
+- uid: '@altmp/altv-types.alt-server.WeatherType.Clouds'
+  name: Clouds
+  href: api/alt-server.WeatherType.html#_altmp_altv_types_alt_server_WeatherType_Clouds
+- uid: '@altmp/altv-types.alt-server.WeatherType.ExtraSunny'
+  name: ExtraSunny
+  href: api/alt-server.WeatherType.html#_altmp_altv_types_alt_server_WeatherType_ExtraSunny
+- uid: '@altmp/altv-types.alt-server.WeatherType.Foggy'
+  name: Foggy
+  href: api/alt-server.WeatherType.html#_altmp_altv_types_alt_server_WeatherType_Foggy
+- uid: '@altmp/altv-types.alt-server.WeatherType.Halloween'
+  name: Halloween
+  href: api/alt-server.WeatherType.html#_altmp_altv_types_alt_server_WeatherType_Halloween
+- uid: '@altmp/altv-types.alt-server.WeatherType.Neutral'
+  name: Neutral
+  href: api/alt-server.WeatherType.html#_altmp_altv_types_alt_server_WeatherType_Neutral
+- uid: '@altmp/altv-types.alt-server.WeatherType.Overcast'
+  name: Overcast
+  href: api/alt-server.WeatherType.html#_altmp_altv_types_alt_server_WeatherType_Overcast
+- uid: '@altmp/altv-types.alt-server.WeatherType.Rain'
+  name: Rain
+  href: api/alt-server.WeatherType.html#_altmp_altv_types_alt_server_WeatherType_Rain
+- uid: '@altmp/altv-types.alt-server.WeatherType.Smog'
+  name: Smog
+  href: api/alt-server.WeatherType.html#_altmp_altv_types_alt_server_WeatherType_Smog
+- uid: '@altmp/altv-types.alt-server.WeatherType.Snow'
+  name: Snow
+  href: api/alt-server.WeatherType.html#_altmp_altv_types_alt_server_WeatherType_Snow
+- uid: '@altmp/altv-types.alt-server.WeatherType.Snowlight'
+  name: Snowlight
+  href: api/alt-server.WeatherType.html#_altmp_altv_types_alt_server_WeatherType_Snowlight
+- uid: '@altmp/altv-types.alt-server.WeatherType.Thunder'
+  name: Thunder
+  href: api/alt-server.WeatherType.html#_altmp_altv_types_alt_server_WeatherType_Thunder
+- uid: '@altmp/altv-types.alt-server.WeatherType.Xmas'
+  name: Xmas
+  href: api/alt-server.WeatherType.html#_altmp_altv_types_alt_server_WeatherType_Xmas
+- uid: '@altmp/altv-types.alt-server.WindowTint'
+  name: WindowTint
+  href: api/alt-server.WindowTint.html#_altmp_altv_types_alt_server_WindowTint
+  fullName: WindowTint
+- uid: '@altmp/altv-types.alt-server.WindowTint.DarkSmoke'
+  name: DarkSmoke
+  href: api/alt-server.WindowTint.html#_altmp_altv_types_alt_server_WindowTint_DarkSmoke
+- uid: '@altmp/altv-types.alt-server.WindowTint.Green'
+  name: Green
+  href: api/alt-server.WindowTint.html#_altmp_altv_types_alt_server_WindowTint_Green
+- uid: '@altmp/altv-types.alt-server.WindowTint.LightSmoke'
+  name: LightSmoke
+  href: api/alt-server.WindowTint.html#_altmp_altv_types_alt_server_WindowTint_LightSmoke
+- uid: '@altmp/altv-types.alt-server.WindowTint.Limo'
+  name: Limo
+  href: api/alt-server.WindowTint.html#_altmp_altv_types_alt_server_WindowTint_Limo
+- uid: '@altmp/altv-types.alt-server.WindowTint.None'
+  name: None
+  href: api/alt-server.WindowTint.html#_altmp_altv_types_alt_server_WindowTint_None
+- uid: '@altmp/altv-types.alt-server.WindowTint.PureBlack'
+  name: PureBlack
+  href: api/alt-server.WindowTint.html#_altmp_altv_types_alt_server_WindowTint_PureBlack
+- uid: '@altmp/altv-types.alt-server.WindowTint.Stock'
+  name: Stock
+  href: api/alt-server.WindowTint.html#_altmp_altv_types_alt_server_WindowTint_Stock
 - uid: '@altmp/altv-types.alt-server.WorldObject'
   name: WorldObject
   href: api/alt-server.WorldObject.html#_altmp_altv_types_alt_server_WorldObject
