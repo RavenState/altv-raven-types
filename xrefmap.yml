@@ -2333,14 +2333,14 @@ references:
   name: playerDisconnect
   href: api/alt-server.IServerEvent.html#_altmp_altv_types_alt_server_IServerEvent_playerDisconnect
   fullName: playerDisconnect
-- uid: '@altmp/altv-types.alt-server.IServerEvent.playerEnterVehicle'
-  name: playerEnterVehicle
-  href: api/alt-server.IServerEvent.html#_altmp_altv_types_alt_server_IServerEvent_playerEnterVehicle
-  fullName: playerEnterVehicle
-- uid: '@altmp/altv-types.alt-server.IServerEvent.playerLeaveVehicle'
-  name: playerLeaveVehicle
-  href: api/alt-server.IServerEvent.html#_altmp_altv_types_alt_server_IServerEvent_playerLeaveVehicle
-  fullName: playerLeaveVehicle
+- uid: '@altmp/altv-types.alt-server.IServerEvent.playerEnteredVehicle'
+  name: playerEnteredVehicle
+  href: api/alt-server.IServerEvent.html#_altmp_altv_types_alt_server_IServerEvent_playerEnteredVehicle
+  fullName: playerEnteredVehicle
+- uid: '@altmp/altv-types.alt-server.IServerEvent.playerLeftVehicle'
+  name: playerLeftVehicle
+  href: api/alt-server.IServerEvent.html#_altmp_altv_types_alt_server_IServerEvent_playerLeftVehicle
+  fullName: playerLeftVehicle
 - uid: '@altmp/altv-types.alt-server.IServerEvent.playerWeaponChange'
   name: playerWeaponChange
   href: api/alt-server.IServerEvent.html#_altmp_altv_types_alt_server_IServerEvent_playerWeaponChange
