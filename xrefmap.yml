@@ -1404,11 +1404,11 @@ references:
   name: Wheelie
   href: api/alt-client.StatName.html#_altmp_altv_types_alt_client_StatName_Wheelie
 - uid: '@altmp/altv-types.alt-client.takeScreenshot'
-  name: takeScreenshot(string)
+  name: takeScreenshot()
   href: api/alt-client.html#_altmp_altv_types_alt_client_takeScreenshot
-- uid: '@altmp/altv-types.alt-client.takeScreenshotBase64'
-  name: takeScreenshotBase64()
-  href: api/alt-client.html#_altmp_altv_types_alt_client_takeScreenshotBase64
+- uid: '@altmp/altv-types.alt-client.takeScreenshotGameOnly'
+  name: takeScreenshotGameOnly()
+  href: api/alt-client.html#_altmp_altv_types_alt_client_takeScreenshotGameOnly
 - uid: '@altmp/altv-types.alt-client.toggleGameControls'
   name: toggleGameControls(boolean)
   href: api/alt-client.html#_altmp_altv_types_alt_client_toggleGameControls
@@ -2910,6 +2910,10 @@ references:
   name: manualEngineControl
   href: api/alt-server.Vehicle.html#_altmp_altv_types_alt_server_Vehicle_manualEngineControl
   fullName: manualEngineControl
+- uid: '@altmp/altv-types.alt-server.Vehicle.model'
+  name: model
+  href: api/alt-server.Vehicle.html#_altmp_altv_types_alt_server_Vehicle_model
+  fullName: model
 - uid: '@altmp/altv-types.alt-server.Vehicle.modKit'
   name: modKit
   href: api/alt-server.Vehicle.html#_altmp_altv_types_alt_server_Vehicle_modKit
