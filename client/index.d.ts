@@ -60,6 +60,76 @@ declare module "alt-client" {
     Checkpoint
   }
 
+  export const enum CheckpointType {
+    CylinderSingleArrow,
+    CylinderDoubleArrow,
+    CylinderTripleArrow,
+    CylinderCycleArrow,
+    CylinderCheckerboard,
+    CylinderWrench,
+    CylinderSingleArrow2,
+    CylinderDoubleArrow2,
+    CylinderTripleArrow2,
+    CylinderCycleArrow2,
+    CylinderCheckerboard2,
+    CylinderWrench2,
+    RingSingleArrow,
+    RingDoubleArrow,
+    RingTripleArrow,
+    RingCycleArrow,
+    RingCheckerboard,
+    SingleArrow,
+    DoubleArrow,
+    TripleArrow,
+    CycleArrow,
+    Checkerboard,
+    CylinderSingleArrow3,
+    CylinderDoubleArrow3,
+    CylinderTripleArrow3,
+    CylinderCycleArrow3,
+    CylinderCheckerboard3,
+    CylinderSingleArrow4,
+    CylinderDoubleArrow4,
+    CylinderTripleArrow4,
+    CylinderCycleArrow4,
+    CylinderCheckerboard4,
+    CylinderSingleArrow5,
+    CylinderDoubleArrow5,
+    CylinderTripleArrow5,
+    CylinderCycleArrow5,
+    CylinderCheckerboard5,
+    RingPlaneUp,
+    RingPlaneLeft,
+    RingPlaneRight,
+    RingPlaneDown,
+    Empty,
+    Ring,
+    Empty2,
+    Cylinder,
+    Cylinder1,
+    Cylinder2,
+    Cylinder3,
+    Cylinder4,
+    Cylinder5,
+    Empty3,
+    Empty4,
+    Empty5,
+    Empty6,
+    RingDollar,
+    RingWolf,
+    RingQuestionMark,
+    RingPlane,
+    RingChopper,
+    RingBoat,
+    RingCar,
+    RingBike,
+    RingBicycle,
+    RingTruck,
+    RingParachute,
+    RingJetpack,
+    RingWhirl
+  }
+
   export interface IClientEvent {
     anyResourceError: (resourceName: string) => void;
     anyResourceStart: (resourceName: string) => void;
@@ -85,7 +155,7 @@ declare module "alt-client" {
   }
 
   export interface IDiscordOAuth2Token {
-    readonly token: string
+    readonly token: string;
     readonly expires: number;
     readonly scopes: string;
   }
@@ -186,6 +256,13 @@ declare module "alt-client" {
     reset(): void;
   }
 
+  export interface IVehicleNeon {
+    left: boolean;
+    right: boolean;
+    front: boolean;
+    back: boolean;
+  }
+
   export interface IVector2 {
     readonly x: number;
 
@@ -209,10 +286,34 @@ declare module "alt-client" {
   export const Version: string;
 
   /**
+   * Represents the current client version.
+   *
+   * @remarks It's a slighty modified semantic versioning specification, which can be matched using this regular expression pattern `^(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-((?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))$`.
+   * @alpha
+   */
+  export const version: string;
+
+  /**
+   * Represents the current client SDK version.
+   * 
+   * @remarks It's the version of the SDK the current runtime was compiled with.
+   * @beta
+   */
+  export const sdkVersion: number;
+
+  /**
    * Represents the current client branch.
+   * 
    * @beta
    */
   export const Branch: string;
+
+  /**
+   * Represents the current client branch.
+   * 
+   * @alpha
+   */
+  export const branch: string;
 
   export class Vector3 {
     public readonly x: number;
@@ -226,6 +327,33 @@ declare module "alt-client" {
     constructor(arr: number[]);
 
     constructor(obj: IVector3);
+
+    public get length(): number;
+    public toArray(): [number, number, number];
+    public add(x: number, y: number, z: number): Vector3;
+    public add(value: number): Vector3;
+    public add(array: [number, number, number]): Vector3;
+    public add(vector: IVector3): Vector3;
+    public sub(x: number, y: number, z: number): Vector3;
+    public sub(value: number): Vector3;
+    public sub(array: [number, number, number]): Vector3;
+    public sub(vector: IVector3): Vector3;
+    public div(x: number, y: number, z: number): Vector3;
+    public div(value: number): Vector3;
+    public div(array: [number, number, number]): Vector3;
+    public div(vector: IVector3): Vector3;
+    public mul(x: number, y: number, z: number): Vector3;
+    public mul(value: number): Vector3;
+    public mul(array: [number, number, number]): Vector3;
+    public mul(vector: IVector3): Vector3;
+    public negative(): Vector3;
+    public normalize(): Vector3;
+    public distanceTo(vector: IVector3): Vector3;
+    public angleTo(vector: IVector3): Vector3;
+    public angleToDegrees(vector: IVector3): Vector3;
+    public toRadians(): Vector3;
+    public toDegrees(): Vector3;
+    public isInRange(vector: IVector3, range: number): boolean;
   }
 
   export class RGBA {
@@ -301,6 +429,22 @@ declare module "alt-client" {
      * Object position
      */
     public pos: Vector3;
+  }
+
+  /**
+  * @alpha
+  */
+  export class Checkpoint extends WorldObject {
+    public checkpointType: CheckpointType;
+    public nextPos: Vector3;
+    public radius: number;
+    public height: number;
+    public color: RGBA;
+
+    constructor(type: CheckpointType, pos: Vector3, nextPos: Vector3, radius: number, height: number, rgbcolor: RGBA);
+
+    public isEntityIn(entity: Entity): boolean;
+    public isPointIn(pos: Vector3): boolean;
   }
 
   export class Entity extends WorldObject {
@@ -389,6 +533,139 @@ declare module "alt-client" {
     /** Player's vehicle, null if player is not in any vehicle */
     public readonly vehicle: Vehicle | null;
 
+    /** 
+     * Current weapon components 
+     * 
+     * @alpha
+     */
+    public readonly currentWeaponComponents: Array<number>;
+
+    /** 
+     * Tint index for currently equipeed weapon
+     * 
+     * @alpha
+     */
+    public readonly currentWeaponTintIndex: number;
+
+    /**
+     * Currently equipped weapon
+     *
+     * @alpha
+     */
+    public readonly currentWeapon: number;
+
+    /** 
+     * Is the player currently jumping 
+     * 
+     * @alpha
+     */
+    public readonly isJumping: boolean;
+
+    /** 
+     * Is the player currently in ragdoll 
+     * 
+     * @alpha
+     */
+    public readonly isInRagdoll: boolean;
+
+    /** 
+     * Is the player currently aiming 
+     * 
+     * @alpha
+     */
+    public readonly isAiming: boolean;
+
+    /** 
+     * Is the player currently shooting with a weapon 
+     * 
+     * @alpha
+     */
+    public readonly isShooting: boolean;
+
+    /** 
+     * Is the player currently reloading their weapon 
+     * 
+     * @alpha
+     */
+    public readonly isReloading: boolean;
+
+    /** 
+     * Current armour 
+     * 
+     * @alpha
+     */
+    public readonly armour: number;
+
+    /** 
+     * Max available armour value 
+     * 
+     * @alpha
+     */
+    public readonly maxArmour: number;
+
+    /** 
+     * Current player movement speed 
+     * 
+     * @alpha
+     */
+    public readonly moveSpeed: number;
+
+    /** 
+     * Position the player is currently aiming at 
+     * 
+     * @alpha
+     */
+    public readonly aimPos: Vector3;
+
+    /** 
+     * Rotation of the head of the player 
+     * 
+     * @alpha
+     */
+    public readonly headRot: Vector3;
+
+    /** 
+     * Curent seat the player is sitting in 
+     * 
+     * @alpha
+     */
+    public readonly seat: number;
+
+    /** 
+     * The entity the player is aiming at 
+     * 
+     * @alpha
+     */
+    public readonly entityAimingAt: Entity | null;
+
+    /**
+     * The current aim offset of the player
+     *
+     * @alpha
+     */
+    public readonly entityAimOffset: Vector3 | null;
+
+    /** 
+     * Is the flashlight of the player activated 
+     * 
+     * @alpha
+     */
+    public readonly flashlightActive: boolean;
+
+    /**
+     * Current health of the player
+     *
+     * @alpha
+     */
+    public readonly health: number;
+
+    /**
+     * Current max health of the player
+     *
+     * @alpha
+     */
+    public readonly maxHealth: number;
+
     /**
      * Retrieves the player from the pool.
      *
@@ -430,6 +707,307 @@ declare module "alt-client" {
 
     /** Vehicle wheel count */
     public readonly wheelsCount: number;
+
+    /**
+     * Is the vehicle destroyed.
+     * 
+     * @alpha
+     */
+    public readonly destroyed: boolean;
+
+    /**
+     * Available modkits for the vehicle.
+     * 
+     * @alpha
+     */
+    public readonly modKitsCount: number;
+
+    /**
+     * Current vehicle modkit.
+     * 
+     * @alpha
+     */
+    public readonly modKit: number;
+
+    /**
+     * Vehicle primary color.
+     * 
+     * @alpha
+     */
+    public readonly primaryColor: number;
+
+    /**
+     * Custom (RGB) vehicle primary color.
+     * 
+     * @alpha
+     */
+    public readonly customPrimaryColor: RGBA;
+
+    /**
+     * Vehicle secondary color.
+     * 
+     * @alpha
+     */
+    public readonly secondaryColor: number;
+
+    /**
+     * Custom (RGB) vehicle secondary color.
+     * 
+     * @alpha
+     */
+    public readonly customSecondaryColor: RGBA;
+
+    /**
+     * Vehicle pearl color.
+     * 
+     * @alpha
+     */
+    public readonly pearlColor: number;
+
+    /**
+     * Vehicle wheel color.
+     * 
+     * @alpha
+     */
+    public readonly wheelColor: number;
+
+    /**
+     * Vehicle interior color.
+     * 
+     * @alpha
+     */
+    public readonly interiorColor: number;
+
+    /**
+     * Vehicle dashboard color.
+     * 
+     * @alpha
+     */
+    public readonly dashboardColor: number;
+
+    /**
+     * Vehicle tire smoke color.
+     * 
+     * @alpha
+     */
+    public readonly tireSmokeColor: number;
+
+    /**
+     * Vehicle wheel type.
+     * 
+     * @alpha
+     */
+    public readonly wheelType: number;
+
+    /**
+     * Vehicle front wheels variation.
+     * 
+     * @alpha
+     */
+    public readonly frontWheels: number;
+
+    /**
+     * Vehicle rear wheels variation.
+     * 
+     * @alpha
+     */
+    public readonly rearWheels: number;
+
+    /**
+     * Are custom tires active.
+     * 
+     * @alpha
+     */
+    public readonly customTires: boolean;
+
+    /**
+     * Vehicle darkness.
+     * 
+     * @alpha
+     */
+    public readonly darkness: number;
+
+    /**
+     * Vehicle numberplate type index.
+     * 
+     * @alpha
+     */
+    public readonly numberPlateIndex: number;
+
+    /**
+     * Vehicle numberplate text.
+     * 
+     * @alpha
+     */
+    public readonly numberPlateText: string;
+
+    /**
+     * Vehicle window tint.
+     * 
+     * @alpha
+     */
+    public readonly windowTint: number;
+
+    /**
+     * Vehicle dirt level.
+     * 
+     * @alpha
+     */
+    public readonly dirtLevel: number;
+
+    /**
+     * Vehicle neon.
+     * 
+     * @alpha
+     */
+    public readonly neon: IVehicleNeon;
+
+    /**
+     * Vehicle neon color.
+     * 
+     * @alpha
+     */
+    public readonly neonColor: RGBA;
+
+    /**
+     * Vehicle livery.
+     * 
+     * @alpha
+     */
+    public readonly livery: number;
+
+    /**
+     * Vehicle roof livery.
+     * 
+     * @alpha
+     */
+    public readonly roofLivery: number;
+
+    /**
+     * Vehicle engine state.
+     * 
+     * @alpha
+     */
+    public readonly engineOn: boolean;
+
+    /**
+     * Vehicle handbrake state.
+     * 
+     * @alpha
+     */
+    public readonly handbrakeActive: boolean;
+
+    /**
+     * Vehicle headlight color.
+     * 
+     * @alpha
+     */
+    public readonly headlightColor: number;
+
+    /**
+     * Active radio station.
+     * 
+     * @alpha
+     */
+    public readonly activeRadioStation: number;
+
+    /**
+     * Vehicle siren state.
+     * 
+     * @alpha
+     */
+    public readonly sirenActive: boolean;
+
+    /**
+     * Vehicle lock state.
+     * 
+     * @alpha
+     */
+    public readonly lockState: number;
+
+    /**
+     * Vehicle daylight state.
+     * 
+     * @alpha
+     */
+    public readonly daylightOn: boolean;
+
+    /**
+     * Vehicle nightlight state.
+     * 
+     * @alpha
+     */
+    public readonly nightlightOn: boolean;
+
+    /**
+     * Vehicle roof state.
+     * 
+     * @alpha
+     */
+    public readonly roofState: number;
+
+    /**
+     * Vehicle flamethrower state.
+     * 
+     * @alpha
+     */
+    public readonly flamethrowerActive: boolean;
+
+    /**
+     * Vehicle lights multiplier.
+     * 
+     * @alpha
+     */
+    public readonly lightsMultiplier: number;
+
+    /**
+     * The vehicle's engine health.
+     * 
+     * @alpha
+     */
+    public readonly engineHealth: number;
+
+    /**
+     * The vehicle's petrol tank health.
+     * 
+     * @alpha
+     */
+    public readonly petrolTankHealth: number;
+
+    /**
+     * Vehicle repairs count.
+     * 
+     * @alpha
+     */
+    public readonly repairsCount: number;
+
+    /**
+     * The vehicle's body health.
+     * 
+     * @alpha
+     */
+    public readonly bodyHealth: number;
+
+    /**
+     * The vehicle's additional body health.
+     * 
+     * @alpha
+     */
+    public readonly bodyAdditionalHealth: number;
+
+    /**
+     * Does the vehicle currently have the bulletproof windows?
+     * 
+     * @alpha
+     */
+    public readonly hasArmoredWindows: boolean;
+
+    /**
+     * Determines whether the vehicle's engine should be turned on/off automatically.
+     * 
+     * @alpha
+     */
+    public readonly manualEngineControl: boolean;
 
     /**
      * Retrieves the vehicle from the pool.
@@ -734,6 +1312,13 @@ declare module "alt-client" {
      * @param encoding The encoding of the file.
      */
     public static read(filename: string, encoding: FileEncoding.Binary): ArrayBuffer;
+  }
+
+  export class Voice {
+    /**
+     * Determines whether the microphone input is currently disabled.
+     */
+    static muteInput: boolean;
   }
 
   /**
